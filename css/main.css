@@ -42,6 +42,10 @@ a:hover {
     text-decoration: underline;
 }
 
+.vorteile {
+    font-size:medium;
+}
+
 /* taken from https://www.w3schools.com/css/css_rwd_grid.asp for responsive design */
 /* For mobile phones: */
 * {
