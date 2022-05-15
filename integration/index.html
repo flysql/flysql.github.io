@@ -6,10 +6,19 @@ title: FlySql - Integration
 	<h2>System Context diagram</h2>
 	<div class="row">
 		<div class="col-12">
-			<img src="/images/integration.system-context-diagram.png" alt="System Context diagram" width=100%/>
+			<object data="/images/integration.system-context-diagram.drawio.svg" width="100%" ></object>
 		</div>
 	</div>	
-	<h3>REST Endpunkt Konsumenten</h3>
+	<h3>Git Repository</h3>
+	<div class="row">
+		<div class="col-1"></div>
+		<div class="col-11">
+			<ul>
+				<li>Die im Repository hinterlegten Dateien werden als REST Resource zur Verfügung gestellt</li>
+			</ul>
+		</div>
+	</div>		
+	<h3>Testausführungssoftware</h3>
 	<div class="row">
 		<div class="col-1"></div>
 		<div class="col-11">
@@ -22,6 +31,26 @@ title: FlySql - Integration
 			</ul>
 		</div>
 	</div>		
+	<h3>Kubernetis Platform</h3>
+	<div class="row">
+		<div class="col-1"></div>
+		<div class="col-11">
+			<ul>
+				<li>Stellt die Konfiguration (Datenbank Verbindung, Git Repository Url, Zertifikate) zur Verfügung</li>
+				<li>Skalierung und Betrieb</li>
+			</ul>
+		</div>
+	</div>		
+	<h3>Avaloq Core System</h3>
+	<div class="row">
+		<div class="col-1"></div>
+		<div class="col-11">
+			<ul>
+				<li>FlySql wird SQL Skripts, PL/SQL Statements und Avaloq Script Statements hier zur Ausführung bringen</li>
+			</ul>
+		</div>
+	</div>		
+	<h2>System Context diagram</h2>
 	<h3>FlySql - Repository</h3>
 	<div class="row">
 		<div class="col-1"></div>
