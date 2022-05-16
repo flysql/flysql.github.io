@@ -75,4 +75,30 @@ title: FlySql - Für Testautomatisierer
 			<div class="col-7"></div>	
 		</div>		
 	</div>	
+	<p></p>
+	<h3>Kann die REST Endpunkte in Java Junit Source Code verwenden</h3>
+	<div class="row">
+		<div class="col-1">Java Snippet</div>
+		<div class="col-10 code-grey-font">
+			<span class="sql-black">...</span><br>
+			<span></span><br>
+			<span class="sql-grey">@Test</span></br>
+			<span class="sql-black">void marketSix_returnsId185() {</span><br>
+			<span class="sql-black">&nbsp;&nbsp;RestTemplate restTemplate = new RestTemplate();</span><br>
+			<span class="sql-black">&nbsp;&nbsp;String baseUrl = "http://flysql.uat1.bank.ch" + "/ebanking/login-by-emailadress";</span><br>
+			<span class="sql-black">&nbsp;&nbsp;URI uri = new URI(baseUrl);</span><br>
+			<span class="sql-black">&nbsp;&nbsp;MarketDto market = new Market("SIX");</span><br>
+			<span></span><br>
+			<span class="sql-black">&nbsp;&nbsp;HttpHeaders headers = new HttpHeaders();</span><br>
+			<span class="sql-black">&nbsp;&nbsp;...</span><br>
+			<span class="sql-black">&nbsp;&nbsp;HttpEntity&lt;Employee&gt; request = new HttpEntity<>(market, headers);</span><br>
+			<span class="sql-black">&nbsp;&nbsp;ResponseEntity&lt;String&gt; result = restTemplate.postForEntity(uri, request, String.class);</span><br>
+			<span class="sql-green">&nbsp;&nbsp;...</span><br>
+			<span class="sql-black">&nbsp;&nbsp;Assert.assertEquals(201, result.getStatusCodeValue());</span><br>			
+			<span class="sql-black">&nbsp;&nbsp;String body = result.getBody();</span><br>
+			<span class="sql-green">&nbsp;&nbsp;...</span><br>
+			<span class="sql-black">}</span><br>			
+		</div>
+		<div class="col-1"></div>
+	</div>
 </div>
