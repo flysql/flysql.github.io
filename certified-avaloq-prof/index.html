@@ -2,7 +2,7 @@
 layout: default
 title: FlySql - Für Certified Avaloq Professional
 ---
-<div class="">
+<div>
     <h3>Verwendet</h3>
 	<div class="row">
 		<div class="col-1"></div>
@@ -19,11 +19,21 @@ title: FlySql - Für Certified Avaloq Professional
 	<div class="row">
 		<div class="col-1"></div>
 		<div class="col-8 code-grey-font">
-		</br>
-			<span class="sql-blue">SELECT</span><span class="sql-black"> ebankingid as LOGIN, loginid as EMAILADRESS </span></br>
+			<br>
+			<span class="sql-blue">SELECT</span><span class="sql-black"> ebankingid as LOGIN, loginid as EMAILADRESS </span><br>
 			<span class="sql-blue">FROM </span><span class="sql-black"> ebankinglogintable</span></br>
-			<span class="sql-blue">WHERE</span><span class="sql-black"> active = '+' and loginid = </span><span class="sql-green">'${EMAILADRESS}';</span></br>
-			<span class="sql-black"></span></br>
+			<span class="sql-blue">WHERE</span><span class="sql-black"> active = '+' and loginid = </span><span class="sql-green">'${EMAILADRESS}';</span><br>
+			<span></span></br>
+		</div>
+		<div class="col-3">&nbsp;</div>
+	</div>
+	<h4>Avaloq Statement mit Parameter</h4>
+	<div class="row">
+		<div class="col-1"></div>
+		<div class="col-8 code-grey-font">
+		<br>
+			<span class="sql-black">lookup.mkt(</span><span class="sql-green">'${MARKET_KEY}'</span><span class="sql-black">, key_type => 30, eff_date => session.today).name</span><br>
+			<span></span><br>
 		</div>
 		<div class="col-3"></div>
 	</div>

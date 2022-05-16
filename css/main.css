@@ -103,3 +103,9 @@ a:hover {
     padding: 2px;
     border: 0px;
   }
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
