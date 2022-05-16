@@ -103,6 +103,35 @@ a:hover {
     font-weight: 200;
 }
 
+.post-border {
+    border-radius: 4px;
+    border: 1px solid rgb(73, 204, 144);
+    padding: 3px;
+}
+
+.post-button {
+    background-color: rgb(73, 204, 144);
+    padding: 5px;
+    border: none;
+}
+
+.post-http-method {
+    border-radius: 3px;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    min-width: 80px;
+    padding: 6px 0;
+    text-align: center;
+}
+
+.post-resource-path {
+    padding-left: 20px;
+    font-family: 'Courier New', Courier, monospace !important;
+    font-size: small;
+    font-weight: 600;
+}
+
 /* taken from https://www.w3schools.com/css/css_rwd_grid.asp for responsive design */
 /* For mobile phones: */
 * {

@@ -15,4 +15,64 @@ title: FlySql - Für Testautomatisierer
 			</ul>
 		</div>
 	</div>
+	<h3>Sieht die via Git Repo verfügbaren Skripte als REST Resourcen</h3>
+	<div class="post-border">
+		<div class="row">
+			<div class="col-12">
+				<button class="post-button">
+					<span class="post-http-method">POST</span>
+				</button>
+				<span class="post-resource-path" >/ebanking/login-by-emailadress</span>
+			</div>			
+		</div>
+		<div class="row">
+			<div class="col-1">Body</div>
+			<div class="col-4 code-grey-font">
+				<span class="sql-repo-path">{</span><br>
+				<span class="sql-repo-path">&nbsp;&nbsp;"EMAILADRESS":"flysql@flysql.net"</span><br>				
+				<span class="sql-repo-path">}</span><br>
+			</div>
+			<div class="col-7"></div>	
+		</div>		
+	</div>
+	<p></p>
+	<div class="post-border">
+		<div class="row">
+			<div class="col-12">
+				<button class="post-button">
+					<span class="post-http-method">POST</span>
+				</button>
+				<span class="post-resource-path" >/assets/markets/marketname-by-marketkey</span>
+			</div>			
+		</div>
+		<div class="row">
+			<div class="col-1">Body</div>
+			<div class="col-4 code-grey-font">
+				<span class="sql-repo-path">{</span><br>
+				<span class="sql-repo-path">&nbsp;&nbsp;"MARKET_KEY":"SIX"</span><br>				
+				<span class="sql-repo-path">}</span><br>
+			</div>
+			<div class="col-7"></div>	
+		</div>		
+	</div>	
+	<p></p>
+	<div class="post-border">
+		<div class="row">
+			<div class="col-12">
+				<button class="post-button">
+					<span class="post-http-method">POST</span>
+				</button>
+				<span class="post-resource-path" >/orders/xfer/new-with-creditcontainer</span>
+			</div>			
+		</div>
+		<div class="row">
+			<div class="col-1">Body</div>
+			<div class="col-4 code-grey-font">
+				<span class="sql-repo-path">{</span><br>
+				<span class="sql-repo-path">&nbsp;&nbsp;"CREDIT_CONTAINER_MACC":"1856-0098"</span><br>				
+				<span class="sql-repo-path">}</span><br>
+			</div>
+			<div class="col-7"></div>	
+		</div>		
+	</div>	
 </div>
