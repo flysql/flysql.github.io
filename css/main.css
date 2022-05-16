@@ -50,6 +50,28 @@ a:hover {
     color: black;
 }
 
+.code-grey-font {
+    background-color: lightgray;
+}
+
+.sql-blue {
+    color: blue;
+    font-family: 'Courier New', Courier, monospace !important;
+    font-size: small;
+}
+
+.sql-black {
+    color: black;
+    font-family: 'Courier New', Courier, monospace !important;
+    font-size: small;
+}
+
+.sql-green {
+    color: green;
+    font-family: 'Courier New', Courier, monospace !important;
+    font-size: small;
+}
+
 /* taken from https://www.w3schools.com/css/css_rwd_grid.asp for responsive design */
 /* For mobile phones: */
 * {

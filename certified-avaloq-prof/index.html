@@ -15,4 +15,16 @@ title: FlySql - Für Certified Avaloq Professional
 			</ul>
 		</div>
 	</div>
+	<h4>SQL Statement mit Parameter</h4>
+	<div class="row">
+		<div class="col-1"></div>
+		<div class="col-8 code-grey-font">
+		</br>
+			<span class="sql-blue">SELECT</span><span class="sql-black"> ebankingid as LOGIN, loginid as EMAILADRESS </span></br>
+			<span class="sql-blue">FROM </span><span class="sql-black"> ebankinglogintable</span></br>
+			<span class="sql-blue">WHERE</span><span class="sql-black"> active = '+' and loginid = </span><span class="sql-green">'${EMAILADRESS}';</span></br>
+			<span class="sql-black"></span></br>
+		</div>
+		<div class="col-3"></div>
+	</div>
 </div>
