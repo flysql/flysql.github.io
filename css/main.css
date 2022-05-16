@@ -3,50 +3,18 @@ html *
     font-family: "Roboto Slab script=latin rev=1";
 }
 
-.navigation-img {
-    display: block;
-    height: 60px;
-    width: 60px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.navigation-grid {
-    display: grid;
-    grid-template-columns: 16% 20% 16% 16% 16% 16%;
-    padding-top: 15px;
-    padding-bottom: 5px;
-    text-align: center;
-}
-
-.nav-href {
-    text-decoration: none;
-    color: rgb(31, 120, 221);
-    font-weight: bold;
-    font-size: medium;
-}
-
-.tdcenter {
-    font-size: 1em;
-    text-align: center;
-}
-.tdleft {
-    font-size: 1em;
-    text-align: left;
-}
-.tdright {
-    font-size: 1em;
-    text-align: right;
-}
 body {
-    margin: 60px auto;
-    width: 70%;
+    min-height: 100vh;
+    margin: 6px auto;
+    width: 75%;
 }
+
 nav ul, footer ul {
     padding: 0px;
     list-style: none;
     font-weight: bold;
 }
+
 nav ul li, footer ul li {
     display: inline;
     margin-right: 20px;
@@ -56,14 +24,37 @@ a:hover {
     text-decoration: underline;
 }
 
-.vorteile {
-    font-size:medium;
-}
-
 .header-link {
+    display: block;
     color: black;
     width: 100%;
     text-decoration: none;
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+.navigation-img {
+    display: block;
+    height: 40px;
+    width: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navigation-grid {
+    display: grid;
+    grid-template-columns: 7% 10% 23% 20% 15% 15% 10%;
+    padding-top: 30px;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+.nav-href {
+    text-decoration: none;
+    color: rgb(31, 120, 221);
+    font-weight: bold;
+    font-size: medium;
 }
 
 .code-grey-font {
