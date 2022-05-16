@@ -58,18 +58,35 @@ a:hover {
     color: blue;
     font-family: 'Courier New', Courier, monospace !important;
     font-size: small;
+    font-weight: 200;
 }
 
 .sql-black {
     color: black;
     font-family: 'Courier New', Courier, monospace !important;
     font-size: small;
+    font-weight: 200;
 }
 
 .sql-green {
     color: green;
     font-family: 'Courier New', Courier, monospace !important;
     font-size: small;
+    font-weight: 200;
+}
+
+.sql-red {
+    color: red;
+    font-family: 'Courier New', Courier, monospace !important;
+    font-size: small;
+    font-weight: 200;
+}
+
+.sql-grey {
+    color: darkslategray;
+    font-family: 'Courier New', Courier, monospace !important;
+    font-size: small;
+    font-weight: 200;
 }
 
 /* taken from https://www.w3schools.com/css/css_rwd_grid.asp for responsive design */

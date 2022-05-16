@@ -22,18 +22,57 @@ title: FlySql - Für Certified Avaloq Professional
 			<br>
 			<span class="sql-blue">SELECT</span><span class="sql-black"> ebankingid as LOGIN, loginid as EMAILADRESS </span><br>
 			<span class="sql-blue">FROM </span><span class="sql-black"> ebankinglogintable</span></br>
-			<span class="sql-blue">WHERE</span><span class="sql-black"> active = '+' and loginid = </span><span class="sql-green">'${EMAILADRESS}';</span><br>
+			<span class="sql-blue">WHERE</span><span class="sql-black"> active = '+' and loginid = </span><span class="sql-red">'${EMAILADRESS}';</span><br>
 			<span></span></br>
 		</div>
-		<div class="col-3">&nbsp;</div>
+		<div class="col-3"></div>
 	</div>
 	<h4>Avaloq Statement mit Parameter</h4>
 	<div class="row">
 		<div class="col-1"></div>
 		<div class="col-8 code-grey-font">
 		<br>
-			<span class="sql-black">lookup.mkt(</span><span class="sql-green">'${MARKET_KEY}'</span><span class="sql-black">, key_type => 30, eff_date => session.today).name</span><br>
+			<span class="sql-black">lookup.mkt(</span><span class="sql-red">'${MARKET_KEY}'</span><span class="sql-black">, key_type => 30, eff_date => session.today).name</span><br>
 			<span></span><br>
+		</div>
+		<div class="col-3"></div>
+	</div>
+	<h4>Avaloq Script mit Parameter</h4>
+	<div class="row">
+		<div class="col-1"></div>
+		<div class="col-8 code-grey-font">
+		<br>
+			<span class="sql-blue">DECLARE</span></br>
+			<span class="sql-black">&nbsp;&nbsp;l_cred_macc_id number;</span><br>
+			<span class="sql-black">&nbsp;&nbsp;l_deb_macc_id number;</span><br>
+			<span class="sql-green">&nbsp;&nbsp;/* more declarations here */</span><br>
+			<span class="sql-black">&nbsp;&nbsp;l_doc_id number;</span><br>
+			<span class="sql-black">&nbsp;&nbsp;l_return number;</span><br>
+			<span></span><br>
+			<span class="sql-blue">BEGIN</span></br>
+			<span class="sql-black">&nbsp;&nbsp;l_cred_macc_id := lookup.macc_id('</span><span class="sql-red">${CREDIT_CONTAINER_MACC}</span><span class="sql-black">');</span><br>
+			<span class="sql-black">&nbsp;&nbsp;l_deb_macc_id := 20195226;</span><br>
+			<span class="sql-black">&nbsp;&nbsp;l_trx_date := lookup.date('-1v');</span><br>
+			<span class="sql-black">&nbsp;&nbsp;l_amount := 1230.05;</span><br>
+			<span class="sql-green">&nbsp;&nbsp;/* more statements here */</span><br>
+			<span class="sql-black">&nbsp;&nbsp;</span><br>
+			<span class="sql-black">&nbsp;&nbsp;with new mem_doc_xfermon(1) as tdoc do</span><br>
+			<span class="sql-black">&nbsp;&nbsp;&nbsp;&nbsp;tdoc.deb_macc_id := l_deb_macc_id;</span><br>
+			<span class="sql-black">&nbsp;&nbsp;&nbsp;&nbsp;tdoc.cred_macc_id := l_cred_macc_id;</span><br>
+			<span class="sql-grey">&nbsp;&nbsp;&nbsp;&nbsp;/* more declarations here */</span><br>
+			<span class="sql-black">&nbsp;&nbsp;&nbsp;&nbsp;l_doc_id := tdoc.doc_id;</span><br>
+			<span class="sql-black">&nbsp;&nbsp;end with;</span><br>
+			<span class="sql-black">&nbsp;&nbsp;</span><br>
+			<span class="sql-black">&nbsp;&nbsp;with mem_doc_xfermon(session.doc_mgr.load_doc(l_doc_id)) as tdoc do</span><br>
+			<span class="sql-black">&nbsp;&nbsp;&nbsp;&nbsp;tdoc.do_wfc_action(4199);</span><br>
+			<span class="sql-black">&nbsp;&nbsp;end with;</span><br>
+			<span></span><br>
+			<span class="sql-red">&nbsp;&nbsp;return l_doc_id;</span><br>
+			<span></span><br>
+			<span class="sql-blue">EXCEPTION</span></br>
+			<span class="sql-green">&nbsp;&nbsp;/* error handling here */</span><br>
+			<span class="sql-blue">END;</span><br>
+			<span></span><br>			
 		</div>
 		<div class="col-3"></div>
 	</div>
