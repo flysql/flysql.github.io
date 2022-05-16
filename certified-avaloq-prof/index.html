@@ -18,31 +18,50 @@ title: FlySql - Für Certified Avaloq Professional
 	</div>
 	<h3>SQL Statement mit Parameter</h3>
 	<div class="row">
-		<div class="col-1"></div>
+		<div class="col-1">Repo Pfad</div>
 		<div class="col-8 code-grey-font">
-			<br>
+			<span class="sql-repo-path">/ebanking/login-by-emailadress.sql</span>
+		</div>
+		<div class="col-3"></div>
+	</div>
+	</p>
+	<div class="row">
+		<div class="col-1">SQL</div>
+		<div class="col-8 code-grey-font">
 			<span class="sql-blue">SELECT</span><span class="sql-black"> ebankingid as LOGIN, loginid as EMAILADRESS </span><br>
 			<span class="sql-blue">FROM </span><span class="sql-black"> ebankinglogintable</span></br>
 			<span class="sql-blue">WHERE</span><span class="sql-black"> active = '+' and loginid = </span><span class="sql-red">'${EMAILADRESS}';</span><br>
-			<span></span></br>
 		</div>
 		<div class="col-3"></div>
 	</div>
 	<h3>Avaloq Statement mit Parameter</h3>
 	<div class="row">
-		<div class="col-1"></div>
+		<div class="col-1">Repo Pfad</div>
 		<div class="col-8 code-grey-font">
-		<br>
+			<span class="sql-repo-path">/assets/markets/marketname-by-marketkey.avq</span>
+		</div>
+		<div class="col-3"></div>
+	</div>
+	</p>
+	<div class="row">
+		<div class="col-1">Statement</div>
+		<div class="col-8 code-grey-font">
 			<span class="sql-black">lookup.mkt(</span><span class="sql-red">'${MARKET_KEY}'</span><span class="sql-black">, key_type => 30, eff_date => session.today).name</span><br>
-			<span></span><br>
 		</div>
 		<div class="col-3"></div>
 	</div>
 	<h3>Avaloq Script mit Parameter</h3>
 	<div class="row">
-		<div class="col-1"></div>
+		<div class="col-1">Repo Pfad</div>
 		<div class="col-8 code-grey-font">
-		<br>
+			<span class="sql-repo-path">/orders/xfer/new-with-creditcontainer.avq</span>
+		</div>
+		<div class="col-3"></div>
+	</div>
+	</p>
+	<div class="row">
+		<div class="col-1">Statement</div>
+		<div class="col-8 code-grey-font">
 			<span class="sql-blue">DECLARE</span></br>
 			<span class="sql-black">&nbsp;&nbsp;l_cred_macc_id number;</span><br>
 			<span class="sql-black">&nbsp;&nbsp;l_deb_macc_id number;</span><br>
@@ -72,8 +91,7 @@ title: FlySql - Für Certified Avaloq Professional
 			<span></span><br>
 			<span class="sql-blue">EXCEPTION</span></br>
 			<span class="sql-green">&nbsp;&nbsp;/* error handling here */</span><br>
-			<span class="sql-blue">END;</span><br>
-			<span></span><br>			
+			<span class="sql-blue">END;</span>
 		</div>
 		<div class="col-3"></div>
 	</div>

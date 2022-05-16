@@ -61,6 +61,13 @@ a:hover {
     background-color: lightgray;
 }
 
+.sql-repo-path {
+    color: black;
+    font-family: 'Courier New', Courier, monospace !important;
+    font-size: small;
+    font-weight: 400;
+}
+
 .sql-blue {
     color: blue;
     font-family: 'Courier New', Courier, monospace !important;
