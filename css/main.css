@@ -132,6 +132,20 @@ a:hover {
     font-weight: 600;
 }
 
+.footer-img {
+    display: inline;
+    height: 20px;
+    width: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 5px;
+}
+
+.footer-txt {
+    font-size: 12px;
+    color: darkgrey;
+}
+
 /* taken from https://www.w3schools.com/css/css_rwd_grid.asp for responsive design */
 /* For mobile phones: */
 * {
