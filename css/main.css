@@ -21,14 +21,6 @@ footer ul li {
     margin-right: 20px;
 }
 
-a:hover {
-    text-decoration: underline;
-}
-
-a:visited {
-    color: blue;
-}
-
 .title-a {
     display: block;
     color: black;
@@ -47,17 +39,32 @@ a:visited {
 }
 
 .header-a {
-    text-decoration: none;
     color: rgb(31, 120, 221);
     font-weight: bold;
     font-size: medium;    
+    max-width: 150px;
 }
 
-.menu-img {
+.header-a a:visited {
+    color: rgb(31, 120, 221);
+}
+
+.header-img {
     display: inline;
     height: 30px;
     width: 30px;
 }
+
+a:link { text-decoration: none; }
+
+
+a:visited { text-decoration: none; }
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active { text-decoration: none; }
 
 .code-grey-font {
     background-color: lightgray;
