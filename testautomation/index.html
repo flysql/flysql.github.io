@@ -22,7 +22,7 @@ title: FlySql - Für Testautomatisierer
 				<button class="post-button">
 					<span class="post-http-method">POST</span>
 				</button>
-				<span class="post-resource-path" >/ebanking/login-by-emailadress</span>
+				<span class="post-resource-path" >/ebanking/login-by-emailadress.sql</span>
 			</div>			
 		</div>
 		<div class="row">
@@ -42,7 +42,7 @@ title: FlySql - Für Testautomatisierer
 				<button class="post-button">
 					<span class="post-http-method">POST</span>
 				</button>
-				<span class="post-resource-path" >/assets/markets/marketname-by-marketkey</span>
+				<span class="post-resource-path" >/assets/markets/marketname-by-marketkey.avq</span>
 			</div>			
 		</div>
 		<div class="row">
@@ -62,7 +62,7 @@ title: FlySql - Für Testautomatisierer
 				<button class="post-button">
 					<span class="post-http-method">POST</span>
 				</button>
-				<span class="post-resource-path" >/orders/xfer/new-with-creditcontainer</span>
+				<span class="post-resource-path" >/orders/xfer/new-with-creditcontainer.avq</span>
 			</div>			
 		</div>
 		<div class="row">
@@ -85,7 +85,7 @@ title: FlySql - Für Testautomatisierer
 			<span class="sql-grey">@Test</span></br>
 			<span class="sql-black">void marketSix_returnsId185() {</span><br>
 			<span class="sql-black">&nbsp;&nbsp;RestTemplate restTemplate = new RestTemplate();</span><br>
-			<span class="sql-black">&nbsp;&nbsp;String baseUrl = "http://flysql.uat1.bank.ch" + "/ebanking/login-by-emailadress";</span><br>
+			<span class="sql-black">&nbsp;&nbsp;String baseUrl = "http://flysql.uat1.bank.ch" + "/ebanking/login-by-emailadress.sql";</span><br>
 			<span class="sql-black">&nbsp;&nbsp;URI uri = new URI(baseUrl);</span><br>
 			<span class="sql-black">&nbsp;&nbsp;MarketDto market = new Market("SIX");</span><br>
 			<span></span><br>
