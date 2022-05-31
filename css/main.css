@@ -39,7 +39,6 @@ footer ul li {
 }
 
 .header-a {
-    color: rgb(31, 120, 221);
     font-weight: bold;
     font-size: medium;    
     max-width: 150px;
@@ -64,7 +63,9 @@ a:hover {
     text-decoration: underline;
 }
 
-a:active { text-decoration: none; }
+a:active { 
+    color: rgb(31, 120, 221);
+    text-decoration: none; }
 
 .code-grey-font {
     background-color: lightgray;
