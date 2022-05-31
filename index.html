@@ -3,8 +3,19 @@ layout: default
 title: FlySql - Vorteile
 ---
 <div>
-	<h2>Die Vorteile wenn REST und Datenbank für die Testautomatisierung zusammen kommen</h2>
-	<h3>Einfachste Integration von Datenbank oder Avaloq Schritten in einen Testflow</h3>
+	<h2>Unterstützung beim Aufbau des Kundenerlebnis-Portal der Testautomatisierung </h2>
+	<div class="row">
+		<div class="col-12">
+			Der Aufbau von digitalen Dienstleistungen für ein Kundenerlebnis Portals rund um ein 
+			Kernbankensystem ist eine grosse Herausforderung. Er erfordert unter
+			 anderem Integrationstests, bei dem die verschiedensten Fachgebiete und Technologien 
+			 zusammen kommen.<p></p> FlySql kann dabei helfen, die Integrationstests schnell, einfach 
+			 und, zugeschnitten auf den jeweiligen Experten, aufzubauen. Es ist das Werkzeug der 
+			 Wahl beim Aufbau einer Integrationsplattform für digitale Dienstleistungen, Kundenerlebnis Portale  
+			 und Kernbankensysteme.
+		</div>
+	</div>
+	<h3>Einfachste Integration von digitalen Dienstleistungs Systemen, Avaloq Abfragen oder Avaloq Workflows in einen Testflow</h3>
 	<div class="row">
 		<div class="col-1"></div>
 		<div class="col-11">
@@ -51,14 +62,24 @@ title: FlySql - Vorteile
 		</div>
 	</div>
 	<div class="row">
-		<h3>REST Zugriff auf Oracle DB</h3>
+		<h3>Dynamische Testdaten und Zugriffe auf das Kernbankensystem dank FlySql</h3>
 		<div class="col-1"></div>
 		<div class="col-11">
 			<ul>
-				<li>Alle Scripte können mit Parametern erstellt werden, diese werden dann zur Ausführungszeit mit denen im REST Aufruf übergebenen Werten aufgelöst</li>
-				<li>SQL Queries (e.g. parameter where ebankingid = 'fly-sql-ebanking')</li>
-				<li>execute PL/SQL</li>
-				<li>Avaloq Script (e.g. create new order script, Instrument und Container sind Parameter, return Value ist die generierte Order Nummer)</li>
+				<li>Abfrage und Generierung von Testdaten und Systemzuständen, um dynamischen Daten / Zustände abzufragen oder zu generieren</li>
+				<li>Ausführen dieser SQL Typen in einem Testflow, alle SQL Typen parametrisierbar falls notwendig</li>
+				<ul>
+					<li>SQL Abfragen, z.B. <span class="sql-black code-grey-font">select isin from obj_asset ... where ${EBANKINGID} = 'fly-sql-ebanking')</span></li>
+					<li>PL/SQL Statements</li>
+					<li>Avaloq Statements, z.B. <span class="sql-black code-grey-font">lookup.asset('${ISIN}').name)</span></li>
+					<li>Avaloq Script, z.B. <span class="sql-black code-grey-font">with new mem_doc_xfermon ... tdoc := ${AMOUNT} ... return doc.id)</span></li>
+				</ul>
+				<li>Beispiel E-Banking Testfall</li>
+				<ul>
+					<li>Abfrage des Kontostandes oder des aktuellen Preises eines Wertpapiers</li>
+					<li>Simulieren einer Einzahlung um einen minimalen Kontostand für den Testfall sicherzustellen</li>
+					<li>Ausführen eine via E-Banking erfassten Börsenauftrags im Kernbankensystem</li>
+				</ul>
 			</ul>
 		</div>
 	</div>
