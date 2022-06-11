@@ -5,6 +5,9 @@ main:
   - name: "Integration"
     url: "/integration/"
     weight: 3
+  - name: "FlySql Aufbau"
+    url: "/flysqlintern/"
+    weight: 4
   - name: "Contact"
     url: "/contact/"
     weight: 5
