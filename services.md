@@ -7,6 +7,12 @@ intro_image_absolute: true
 intro_image_hide_on_mobile: true
 ---
 
-# Services that grow with your business
+# FlySql bringt die Experten zusammen
 
-Aliquam erat volutpat. Morbi nisl tortor, dignissim eget efficitur vel, auctor non felis. Fusce quis viverra mi. Aenean quis massa pretium, ullamcorper nisi eget, hendrerit odio.
+Jeder Experte kann unabhängig, in seinem jeweiligem Fachgebiet, zum Erfolg beitragen.
+
+- Avaloq und SQL Skripte werden durch Certified Avaloq Professional bereitgestellt
+- Testautomation Entwickler binden FlySql mit dem Tool ihrer Wahl (Tosca, Java/Junit, Python, ...) ein
+- Test Experten haben bei der Testausführung transparent Zugriff auf die Testschritte mit FlySql
+- Avaloq Release Manager kontrollieren den FlySql Service - K Passwort, DB ZUgriffe, Skalierung
+- Die Fachbereiche können sich auf umfassende, beliebig wiederholbare und schnell laufende Tests verlassen.
