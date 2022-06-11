@@ -5,9 +5,6 @@ main:
   - name: "Integration"
     url: "/integration/"
     weight: 3
-  - name: "Team"
-    url: "/team/"
-    weight: 4
   - name: "Contact"
     url: "/contact/"
     weight: 5
