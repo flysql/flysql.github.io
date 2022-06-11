@@ -2,11 +2,11 @@ main:
   - name: "Für Experten"
     url: "/services/"
     weight: 2
+  - name: "Integration"
+    url: "/integration/"
+    weight: 3
   - name: "Team"
     url: "/team/"
-    weight: 3
-  - name: "About"
-    url: "/about/"
     weight: 4
   - name: "Contact"
     url: "/contact/"
