@@ -7,7 +7,7 @@ intro_image_absolute: true
 intro_image_hide_on_mobile: true
 ---
 
-# FlySql bringt die Experten zusammen
+## FlySql bringt die Experten zusammen
 
 Jeder Experte kann unabhängig, in seinem jeweiligem Fachgebiet, zum Erfolg beitragen.
 
