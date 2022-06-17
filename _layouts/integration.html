@@ -4,12 +4,16 @@ bodyClass: "page-home"
 ---
 <div class="container">
 	<div class="row justify-content-start mb-4">
-		<div class="col-6 col-md-6">
-		<h2>Die Integration</h2> von FlySql ist denkbar einfach. FlySql wird als Docker Container ausgeliefert. Die Integration zum Git Repository 
+		<div class="col-7 col-md-7">
+			<h2>Die Integration</h2> von FlySql ist denkbar einfach. FlySql wird als Docker Container ausgeliefert. Die
+			Integration zum Git Repository
 			und Avaloq Core System Datenbanken erfolgt über eine Konfigurationsdatei.
 		</div>
-		<div class="col-4 col-md-4">
-			<object data="/images/integration.system-context-diagram.drawio.svg" width="100%" ></object>		
+		<div class="col-5 col-md-5 mt-2">
+			<object type="image/svg+xml" width="200" height="150"
+			    class="intro-image-integration--{% if page.intro_image_absolute %} intro-image-absolute-integration{% endif %}{% if page.intro_image_hide_on_mobile %} intro-image-hide-mobile{% endif %}"
+				data="/images/integration.system-context-diagram.drawio.svg">
+			</object>
 		</div>
 	</div>
 </div>
@@ -19,9 +23,9 @@ bodyClass: "page-home"
 	<h3>System Context diagram</h3>
 	<div class="row">
 		<div class="col-12">
-			<object data="/images/integration.system-context-diagram.drawio.svg" width="40%" ></object>
+			<object data="/images/integration.system-context-diagram.drawio.svg" width="40%"></object>
 		</div>
-	</div>	
+	</div>
 	<h3>Git Repository</h3>
 	<div class="row">
 		<div class="col-1"></div>
@@ -30,20 +34,23 @@ bodyClass: "page-home"
 				<li>Die im Repository hinterlegten Dateien werden als REST Resource zur Verfügung gestellt</li>
 			</ul>
 		</div>
-	</div>		
+	</div>
 	<h3>Testausführungssoftware</h3>
 	<div class="row">
 		<div class="col-1"></div>
 		<div class="col-11">
 			<ul>
-				<li>Beliebige Applikationen, die das REST Protokoll beherrschen, können mit FlySql integriert werden</li>
-				<li>Kommerzielle Tools zur Testautomatisierung wie zum Beispiel Tricentis Tosca, Ranorex, Service Trace</li>
+				<li>Beliebige Applikationen, die das REST Protokoll beherrschen, können mit FlySql integriert werden
+				</li>
+				<li>Kommerzielle Tools zur Testautomatisierung wie zum Beispiel Tricentis Tosca, Ranorex, Service Trace
+				</li>
 				<li>Integration in bestehende End-to-end Tests, zum Beispiel E-Banking</li>
-				<li>Open Source Software zur Integration in bestehende End-to-end Tests, zum Beispiel Selenium, Cypress</li>
+				<li>Open Source Software zur Integration in bestehende End-to-end Tests, zum Beispiel Selenium, Cypress
+				</li>
 				<li>Skalierbares Regressionstesten von Avaloq ACP mit zB Java Junit</li>
 			</ul>
 		</div>
-	</div>		
+	</div>
 	<h3>Kubernetes Platform</h3>
 	<div class="row">
 		<div class="col-1"></div>
@@ -53,14 +60,15 @@ bodyClass: "page-home"
 				<li>Skalierung und Betrieb</li>
 			</ul>
 		</div>
-	</div>		
+	</div>
 	<h3>Avaloq Core System</h3>
 	<div class="row">
 		<div class="col-1"></div>
 		<div class="col-11">
 			<ul>
-				<li>FlySql wird SQL Skripts, PL/SQL Statements und Avaloq Script Statements hier zur Ausführung bringen</li>
+				<li>FlySql wird SQL Skripts, PL/SQL Statements und Avaloq Script Statements hier zur Ausführung bringen
+				</li>
 			</ul>
 		</div>
-	</div>		
+	</div>
 </div>
