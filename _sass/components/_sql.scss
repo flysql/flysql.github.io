@@ -2,3 +2,11 @@
     background-color: lightgray;
     font-family: 'Courier New', Courier, monospace;
 }
+
+.textarea-sql {
+    background-color: lightgray;
+    font-family: 'Courier New', Courier, monospace;
+    disabled: true;
+    overflow: hidden;
+    resize: none;
+}

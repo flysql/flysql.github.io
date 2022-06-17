@@ -15,20 +15,22 @@ Avaloq Certified Professionals stellen ihre Expertise zur Verfügung, um Avaloq 
 
 ## Beispiele
 ### SQL Statement mit Parametern
-```
+<textarea class="textarea-sql" rows="3" cols="70" >
 SELECT ebankingid as LOGIN, loginid as EMAILADRESS
 FROM ebankinglogintable
 WHERE active = '+' and loginid = '${EMAILADRESS}'; 
-```
+</textarea>
+
 ### Avaloq Statement mit Parametern
-```
+<textarea class="textarea-sql" rows="4" cols="70" >
 lookup.mkt('${MARKET_KEY}'
    , key_type => 30
    , eff_date => session.today)
    .name
-```
+</textarea>
+
 ### Avaloq Script mit Parametern
-```
+<textarea class="textarea-sql" rows="30" cols="70" >
 DECLARE
   l_cred_macc_id number;
   l_deb_macc_id number;
@@ -59,4 +61,4 @@ BEGIN
 EXCEPTION
   /* error handling here */
 END;
-```
+</textarea>
