@@ -77,17 +77,17 @@ bodyClass: "page-home"
         <li>Abfrage und Generierung von Testdaten und Systemzuständen, um dynamischen Daten / Zustände abzufragen
           oder zu generieren</li>
         <li>Ausführen dieser SQL Typen in einem Testflow, alle SQL Typen parametrisierbar falls notwendig</li>
-        <ul>
-          <li>SQL Abfragen, zum Beispiel <span class="sql-black code-grey-font">select isin from obj_asset ...
-              where ${EBANKINGID} = 'fly-sql-ebanking')</span></li>
+        <ul class="li-2nd-level">
+          <li>SQL Abfragen, zum Beispiel <span class="sql">select EBANKINGID from ebanking_users ...
+              where LOGIN_ID = '${LOGINID_FROM_TESTCASE}'</span></li>
           <li>PL/SQL Statements</li>
           <li>Avaloq Statements, zum Beispiel <span
-              class="sql-black code-grey-font">lookup.asset('${ISIN}').name)</span></li>
-          <li>Avaloq Script, zum Beispiel <span class="sql-black code-grey-font">with new mem_doc_xfermon ... tdoc
-              := ${AMOUNT} ... return doc.id)</span></li>
+              class="sql">lookup.asset('${ISIN}').name)</span></li>
+          <li>Avaloq Script, zum Beispiel <span class="sql">with new mem_doc_xfermon ... tdoc
+              := ${AMOUNT} ... return doc.id</span></li>
         </ul>
         <li>Beispiel E-Banking Testfall</li>
-        <ul>
+        <ul class="li-2nd-level">
           <li>Abfrage des Kontostandes oder des aktuellen Preises eines Wertpapiers</li>
           <li>Simulieren einer Einzahlung um einen minimalen Kontostand für den Testfall sicherzustellen</li>
           <li>Ausführen eine via E-Banking erfassten Börsenauftrags im Kernbankensystem</li>
