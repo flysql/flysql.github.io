@@ -16,5 +16,5 @@ Testexperten können Tests jederzeit schnell und beliebig oft ausführen. FlySql
 ## Auswertungen und Analysen
 - Testprotokolle der eingesetzten Testwerkzeuge
 - Kann bei Bedarf FlySql zur Analayse von Daten heranziehen
-- Kann bei Bedarf FlySql für die Ausführung von Teilschritten des Tests verwenden (z.B. Kontostand heraufsetzen)
+- Kann bei Bedarf FlySql für die Ausführung von Teilschritten des Tests verwenden (zum Beispiel Kontostand heraufsetzen)
 - Kann FlySql als "one stop shop" bei der Problemanalyse im Testablauf verwenden
