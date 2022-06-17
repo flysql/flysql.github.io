@@ -15,3 +15,4 @@ add a file called 'Gemfile' into root
 
 ## SVG stuff
 [https://css-tricks.com/scale-svg/](SVG integration in HTML)
+[https://www.mediaevent.de/svg-in-html-seiten/](7 Wege zur Integration von SVG in HTML)

@@ -11,34 +11,24 @@ bodyClass: "page-home"
 		</div>
 		<div class="col-5 col-md-5 mt-2">
 			<object type="image/svg+xml" width="200" height="150"
-			    class="intro-image-integration--{% if page.intro_image_absolute %} intro-image-absolute-integration{% endif %}{% if page.intro_image_hide_on_mobile %} intro-image-hide-mobile{% endif %}"
+				class="intro-image-integration--{% if page.intro_image_absolute %} intro-image-absolute-integration{% endif %}{% if page.intro_image_hide_on_mobile %} intro-image-hide-mobile{% endif %}"
 				data="/images/integration.system-context-diagram.drawio.svg">
 			</object>
 		</div>
 	</div>
 </div>
 
-<div class="vorteile">
-	<h2>Integration</h2>
-	<h3>System Context diagram</h3>
+<div class="container">
 	<div class="row">
-		<div class="col-12">
-			<object data="/images/integration.system-context-diagram.drawio.svg" width="40%"></object>
-		</div>
-	</div>
-	<h3>Git Repository</h3>
-	<div class="row">
-		<div class="col-1"></div>
-		<div class="col-11">
+		<div class="col-md-6 pb-4">
+			<h2 class="service-title">Kubernetes Platform</h2>
 			<ul>
-				<li>Die im Repository hinterlegten Dateien werden als REST Resource zur Verfügung gestellt</li>
+				<li>Stellt die Konfiguration (Datenbank Verbindung, Git Repository Url, Zertifikate) zur Verfügung</li>
+				<li>Skalierung und Betrieb</li>
 			</ul>
 		</div>
-	</div>
-	<h3>Testausführungssoftware</h3>
-	<div class="row">
-		<div class="col-1"></div>
-		<div class="col-11">
+		<div class="col-md-6 pb-4">
+			<h2 class="service-title">Testausführungssoftware</h2>
 			<ul>
 				<li>Beliebige Applikationen, die das REST Protokoll beherrschen, können mit FlySql integriert werden
 				</li>
@@ -51,24 +41,23 @@ bodyClass: "page-home"
 			</ul>
 		</div>
 	</div>
-	<h3>Kubernetes Platform</h3>
 	<div class="row">
-		<div class="col-1"></div>
-		<div class="col-11">
+		<div class="col-md-6 pb-4">
+			<h2 class="service-title">Git Repository</h2>
 			<ul>
-				<li>Stellt die Konfiguration (Datenbank Verbindung, Git Repository Url, Zertifikate) zur Verfügung</li>
-				<li>Skalierung und Betrieb</li>
+				<li>Die im Repository hinterlegten Dateien werden als REST Resource zur Verfügung gestellt</li>
 			</ul>
 		</div>
+		<div class="col-md-6 pb-4">
+			<h2 class="service-title">Avaloq Core System</h2>
+			<li>FlySql wird SQL Skripts, PL/SQL Statements und Avaloq Script Statements hier zur Ausführung bringen
+			</li>
+		</div>
 	</div>
-	<h3>Avaloq Core System</h3>
 	<div class="row">
-		<div class="col-1"></div>
-		<div class="col-11">
-			<ul>
-				<li>FlySql wird SQL Skripts, PL/SQL Statements und Avaloq Script Statements hier zur Ausführung bringen
-				</li>
-			</ul>
+		<div class="col-12 col-md-12">
+			<h2>System Context Diagram</h2>
+			<object data="/images/integration.system-context-diagram.drawio.svg" width="100%"></object>
 		</div>
 	</div>
 </div>
