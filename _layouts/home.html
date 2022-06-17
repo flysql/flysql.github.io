@@ -9,114 +9,90 @@ bodyClass: "page-home"
       <div class="col-12 col-md-7 col-lg-6 order-2 order-md-1">
         {{ content }}
         {% if page.show_call_box %}
-          {% include call.html show_button=true %}
+        {% include call.html show_button=true %}
         {% endif %}
       </div>
       {% if page.intro_image %}
       <div class="col-12 col-md-5 col-lg-6 order-1 order-md-2 position-relative">
-        <img alt="{{ page.title }}" class="intro-image{% if page.intro_image_absolute %} intro-image-absolute{% endif %}{% if page.intro_image_hide_on_mobile %} intro-image-hide-mobile{% endif %}" src="{{ page.intro_image | relURL }}" />
+        <img alt="{{ page.title }}"
+          class="intro-image{% if page.intro_image_absolute %} intro-image-absolute{% endif %}{% if page.intro_image_hide_on_mobile %} intro-image-hide-mobile{% endif %}"
+          src="{{ page.intro_image | relURL }}" />
       </div>
       {% endif %}
     </div>
   </div>
 </div>
 
-<div class="strip">
-  <div class="container pt-6 pb-6 pb-md-2">
-    <div class="row justify-content-start">
-      <div class="col-12 col-md-8 mb-1">
-        <div class="service service-summary">
-          <div class="service-content">
-            <h2 class="service-title">Einfachste Integration</h2>
-              <h3>von digitalen Dienstleistungs Systemen, Avaloq Abfragen oder Avaloq Workflows in einen Testflow</h3>
-              <ul>
-                <li>E-Banking - Ausführen eines Zahlungsauftrags oder Ausführen eines Wertschriftenorders in Avaloq</li>
-                <li>E-Banking - Prüfen ob die im E-Banking erfassten Daten auf dem Order im Avaloq abgelegt wurden</li>
-                <li>Skalierbare Tests um das Kostenregelwerk im Avaloq zu testen</li>
-              </ul>
-          </div>
-        </div>
-      </div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 pb-4">
+      <h2 class="service-title">Einfachste Integration</h2>
+      <h3>von digitalen Dienstleistungs Systemen, Avaloq Abfragen oder Avaloq Workflows in einen Testflow</h3>
+      <ul>
+        <li>E-Banking - Ausführen eines Zahlungsauftrags oder Ausführen eines Wertschriftenorders in Avaloq</li>
+        <li>E-Banking - Prüfen ob die im E-Banking erfassten Daten auf dem Order im Avaloq abgelegt wurden</li>
+        <li>Skalierbare Tests um das Kostenregelwerk im Avaloq zu testen</li>
+      </ul>
+    </div>
+    <div class="col-md-6 pb-4">
+      <h2 class="service-title">Jeder Experte kann unabhängig</h2>
+      <h3>in seinem jeweiligem Fachgebiet, zum Erfolg beitragen</h3>
+      <ul>
+        <li>Avaloq und SQL Skripte werden durch Certified Avaloq Professional bereitgestellt</li>
+        <li>Testautomation Entwickler binden FlySql mit dem Tool ihrer Wahl (Tosca, Java/Junit, Python, ...) ein
+        </li>
+        <li>Test Experten haben bei der Testausführung transparent Zugriff auf die Testschritte mit FlySql</li>
+        <li>Avaloq Release Manager kontrollieren den FlySql Service - K Passwort, DB ZUgriffe, Skalierung</li>
+      </ul>
     </div>
   </div>
-  <div class="container pt-6 pb-6 pb-md-2">
-    <div class="row justify-content-start">
-      <div class="col-12 col-md-8 mb-1">
-        <div class="service service-summary">
-          <div class="service-content">
-            <h2 class="service-title">Jeder Experte kann unabhängig</h2>
-              <h3>in seinem jeweiligem Fachgebiet, zum Erfolg beitragen</h3>
-              <ul>
-                <li>Avaloq und SQL Skripte werden durch Certified Avaloq Professional bereitgestellt</li>
-                <li>Testautomation Entwickler binden FlySql mit dem Tool ihrer Wahl (Tosca, Java/Junit, Python, ...) ein</li>
-                <li>Test Experten haben bei der Testausführung transparent Zugriff auf die Testschritte mit FlySql</li>
-                <li>Avaloq Release Manager kontrollieren den FlySql Service - K Passwort, DB ZUgriffe, Skalierung</li>
-              </ul>
-          </div>
-        </div>
-      </div>
+  <div class="row">
+    <div class="col-md-6 pb-4">
+      <h2 class="service-title">Volle Audit Sicherheit dank FlySql</h2>
+      <ul>
+        <li>SQL und Avaloq Scripte mit denen FlySql arbeitet, sind in einem Git Repository abgelegt. Änderungen
+          sind transparent und können dem 4 Augen Prinzip unterworfen werden</li>
+        <li>Abfragen werden durch FlySql protokolliert</li>
+        <li>Systempasswörter (zum Beispiel das K Passwort) sind nur dem FlySql Service bekannt und somit geschützt
+        </li>
+      </ul>
+    </div>
+    <div class="col-md-6 pb-4">
+      <h2 class="service-title">Volle Skalierung</h2>
+      <h3>der Testautomatisierung dank FlySq</h3>
+      <ul>
+        <li>Einfachste Einbindung der verschiedensten Fachexperten, jeder arbeitet in seinem Bereich unabhängig am
+          Gesamtkonzept</li>
+        <li>100% Verwendung von Industrie Standardlösungen (Git, REST, Docker, Java)</li>
+        <li>Keine Installation auf den Datenbank Systemen notwendig</li>
+        <li>Beliebige Skalierung der FlySql Services mittels Docker</li>
+      </ul>
     </div>
   </div>
-  <div class="container pt-6 pb-6 pb-md-2">
-    <div class="row justify-content-start">
-      <div class="col-12 col-md-8 mb-1">
-        <div class="service service-summary">
-          <div class="service-content">
-            <h2 class="service-title">Volle Audit Sicherheit dank FlySql</h2>
-            <ul>
-              <li>SQL und Avaloq Scripte mit denen FlySql arbeitet, sind in einem Git Repository abgelegt. Änderungen sind transparent und können dem 4 Augen Prinzip unterworfen werden</li>
-              <li>Abfragen werden durch FlySql protokolliert</li>
-              <li>Systempasswörter (zum Beispiel das K Passwort) sind nur dem FlySql Service bekannt und somit geschützt</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="container pt-6 pb-6 pb-md-2">
-    <div class="row justify-content-start">
-      <div class="col-12 col-md-8 mb-1">
-        <div class="service service-summary">
-          <div class="service-content">
-            <h2 class="service-title">Volle Skalierung</h2>
-              <h3>der Testautomatisierung dank FlySq</h3>
-              <ul>
-                <li>Einfachste Einbindung der verschiedensten Fachexperten, jeder arbeitet in seinem Bereich unabhängig am Gesamtkonzept</li>
-                <li>100% Verwendung von Industrie Standardlösungen (Git, REST, Docker, Java)</li>
-                <li>Keine Installation auf den Datenbank Systemen notwendig</li>
-                <li>Beliebige Skalierung der FlySql Services mittels Docker</li>
-              </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="container pt-6 pb-6 pb-md-2">
-    <div class="row justify-content-start">
-      <div class="col-12 col-md-8 mb-1">
-        <div class="service service-summary">
-          <div class="service-content">
-            <h2 class="service-title">Dynamische Testdaten</h2>
-              <h3>und Zugriffe auf das Kernbankensystem dank FlySql</h3>
-              <ul>
-                <li>Abfrage und Generierung von Testdaten und Systemzuständen, um dynamischen Daten / Zustände abzufragen oder zu generieren</li>
-                <li>Ausführen dieser SQL Typen in einem Testflow, alle SQL Typen parametrisierbar falls notwendig</li>
-                <ul>
-                  <li>SQL Abfragen, zum Beispiel <span class="sql-black code-grey-font">select isin from obj_asset ... where ${EBANKINGID} = 'fly-sql-ebanking')</span></li>
-                  <li>PL/SQL Statements</li>
-                  <li>Avaloq Statements, zum Beispiel <span class="sql-black code-grey-font">lookup.asset('${ISIN}').name)</span></li>
-                  <li>Avaloq Script, zum Beispiel <span class="sql-black code-grey-font">with new mem_doc_xfermon ... tdoc := ${AMOUNT} ... return doc.id)</span></li>
-                </ul>
-                <li>Beispiel E-Banking Testfall</li>
-                <ul>
-                  <li>Abfrage des Kontostandes oder des aktuellen Preises eines Wertpapiers</li>
-                  <li>Simulieren einer Einzahlung um einen minimalen Kontostand für den Testfall sicherzustellen</li>
-                  <li>Ausführen eine via E-Banking erfassten Börsenauftrags im Kernbankensystem</li>
-                </ul>
-              </ul>
-          </div>
-        </div>
-      </div>
+  <div class="row">
+    <div class="col-md-12 mb-4">
+      <h2 class="service-title">Dynamische Testdaten</h2>
+      <h3>und Zugriffe auf das Kernbankensystem dank FlySql</h3>
+      <ul>
+        <li>Abfrage und Generierung von Testdaten und Systemzuständen, um dynamischen Daten / Zustände abzufragen
+          oder zu generieren</li>
+        <li>Ausführen dieser SQL Typen in einem Testflow, alle SQL Typen parametrisierbar falls notwendig</li>
+        <ul>
+          <li>SQL Abfragen, zum Beispiel <span class="sql-black code-grey-font">select isin from obj_asset ...
+              where ${EBANKINGID} = 'fly-sql-ebanking')</span></li>
+          <li>PL/SQL Statements</li>
+          <li>Avaloq Statements, zum Beispiel <span
+              class="sql-black code-grey-font">lookup.asset('${ISIN}').name)</span></li>
+          <li>Avaloq Script, zum Beispiel <span class="sql-black code-grey-font">with new mem_doc_xfermon ... tdoc
+              := ${AMOUNT} ... return doc.id)</span></li>
+        </ul>
+        <li>Beispiel E-Banking Testfall</li>
+        <ul>
+          <li>Abfrage des Kontostandes oder des aktuellen Preises eines Wertpapiers</li>
+          <li>Simulieren einer Einzahlung um einen minimalen Kontostand für den Testfall sicherzustellen</li>
+          <li>Ausführen eine via E-Banking erfassten Börsenauftrags im Kernbankensystem</li>
+        </ul>
+      </ul>
     </div>
   </div>
 </div>
