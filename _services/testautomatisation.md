@@ -14,19 +14,34 @@ Testautomatisierer erstellen automatisierte Tests um Integrations- oder Regressi
 
 ## Beispiele
 ### Von FlySql als REST Resource verfügbare Scripte 
-- POST: `/ebanking/login-by-emailadress.sql` mit Payload `{ "EMAILADRESS":"flysql@flysql.net" }`
-- POST: `/assets/markets/marketname-by-marketkey.avq` mit Payload `{ "MARKET_KEY":"SIX" }`
-- POST: `/orders/xfer/new-with-creditcontainer.avq` mit Payload `{ "CREDIT_CONTAINER_MACC":"1856-0098", "AMOUNT: 12000 }`
+Query Login name by emailadress  
+<textarea class="textarea-sql mb-2" rows="2" cols="70" id="post1" >
+POST: `/ebanking/login-by-emailadress.sql`
+PAYLOAD: { "EMAILADRESS":"flysql@flysql.net" }
+</textarea>  
+Query Name for Market SIX
+<textarea class="textarea-sql mb-2" rows="2" cols="70" id="post1" >
+POST: `/assets/markets/marketname-by-marketkey.avq`
+PAYLOAD: { "MARKET_KEY":"SIX" }
+</textarea> 
+Geldübertrag von CHF 12'000
+<textarea class="textarea-sql mb-2" rows="2" cols="70" id="post1" >
+POST: `/orders/xfer/new-with-creditcontainer.avq`
+PAYLOAD: { "CREDIT_CONTAINER_MACC":"1856-0098", "AMOUNT: 12000 }
+</textarea>
 
 ### Aufruf einer FlySql Resource in Java Junit Test
-```
+<textarea class="textarea-sql" rows="22" cols="70" >
+package ebankingtest.bank.ch
 ...
 
 @Test
 void marketSix_returnsId185() {
   RestTemplate restTemplate = new RestTemplate();
-  String baseUrl = "http://flysql.uat1.bank.ch" + "/ebanking/login-by-emailadress.sql";
-  URI uri = new URI(baseUrl);
+  String baseUrl = "http://flysql.uat1.bank.ch";
+  String path = "/ebanking/login-by-emailadress.sql";
+
+  URI uri = new URI(baseUrl + path);
   MarketDto market = new Market("SIX");
 
   HttpHeaders headers = new HttpHeaders();
@@ -38,4 +53,5 @@ void marketSix_returnsId185() {
   String body = result.getBody();
   ...
 }
-```
+
+</textarea>
