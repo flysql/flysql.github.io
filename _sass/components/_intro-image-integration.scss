@@ -1,10 +1,10 @@
-.intro-image-service {
+.intro-image-integration {
   width: 100%;
   height: auto;
   margin-top: 30px;
 }
-.intro-image-absolute-service {
-  max-width: 500px;
+.intro-image-absolute-integration {
+  max-width: 200px;
   max-height: 350px;
 
   padding: 0;
@@ -15,16 +15,16 @@
     position: absolute;
     bottom: 10px;
     left: 10px;
-    width: 250px;
+    width: 200px;
   }
   @include media-breakpoint-up(lg) {
     bottom: 10px;
     left: 10px;
-    width: 500px;
+    width: 200px;
   }
   @include media-breakpoint-up(xl) {
     bottom: 10px;
     left: 10px;
-    width: 500px;
+    width: 200px;
   }
 }
