@@ -25,10 +25,10 @@
      inkscape:document-units="px"
      showgrid="true"
      inkscape:zoom="30.440718"
-     inkscape:cx="14.454324"
-     inkscape:cy="15.866906"
-     inkscape:window-width="1865"
-     inkscape:window-height="1330"
+     inkscape:cx="14.536451"
+     inkscape:cy="15.965458"
+     inkscape:window-width="1660"
+     inkscape:window-height="1306"
      inkscape:window-x="1793"
      inkscape:window-y="195"
      inkscape:window-maximized="0"
@@ -145,5 +145,14 @@
          x="0.23606336"
          y="30.651554"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.3114px;font-family:'Anek Latin';-inkscape-font-specification:'Anek Latin, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#f53a5a;fill-opacity:1;stroke-width:0.859286">FLYSQL</tspan></text>
+    <rect
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#288be9;stroke-width:0.203927;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4743"
+       width="31.828922"
+       height="31.76322"
+       x="0.069113024"
+       y="0.1348145"
+       inkscape:label="Icon border"
+       ry="1.8067905" />
   </g>
 </svg>
