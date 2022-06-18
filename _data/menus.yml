@@ -1,6 +1,6 @@
 main:
   - name: "Für Experten"
-    url: "/services/"
+    url: "/experts/"
     weight: 2
   - name: "Integration"
     url: "/integration/"

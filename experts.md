@@ -1,6 +1,6 @@
 ---
 title: Experten
-layout: services
+layout: experts
 description: Services
 intro_image: "images/illustrations/reading.svg"
 intro_image_absolute: true
