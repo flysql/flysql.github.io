@@ -68,15 +68,15 @@
     <g
        id="g24163"
        inkscape:label="FlySql symbol"
-       transform="matrix(1.2597057,0,0,1.2597057,-2.866728,-18.703751)"
-       style="stroke-width:1.00023363;stroke-dasharray:none">
+       transform="matrix(1.2099272,0,0,1.2099272,-2.1858515,-17.393907)"
+       style="stroke-width:1.00023;stroke-dasharray:none">
       <g
          id="g24075"
          inkscape:label="orange outflow"
          transform="rotate(134.43816,5.9175736,13.229688)"
-         style="stroke-width:1.00023363;stroke-dasharray:none">
+         style="stroke-width:1.00023;stroke-dasharray:none">
         <rect
-           style="fill:#fc9b17;fill-opacity:1;stroke-width:1.00024284;stroke-dasharray:none"
+           style="fill:#fc9b17;fill-opacity:1;stroke-width:1.00024;stroke-dasharray:none"
            id="rect419-0-0"
            width="8.9914885"
            height="6.4332023"
@@ -85,7 +85,7 @@
            transform="matrix(0.9999724,0.00742967,-0.00136163,0.99999907,0,0)"
            inkscape:label="orange rectangle" />
         <circle
-           style="fill:#fc9b17;fill-opacity:1;stroke-width:1.00023363;stroke-dasharray:none"
+           style="fill:#fc9b17;fill-opacity:1;stroke-width:1.00023;stroke-dasharray:none"
            id="path3151-8-2"
            cx="15.45"
            cy="3.25"
@@ -96,9 +96,9 @@
          id="g24071"
          inkscape:label="blue outflow"
          transform="rotate(-45.003988,30.612713,4.4684673)"
-         style="stroke-width:1.00023363;stroke-dasharray:none">
+         style="stroke-width:1.00023;stroke-dasharray:none">
         <rect
-           style="fill:#4bc9eb;fill-opacity:1;stroke-width:1.00023364;stroke-dasharray:none"
+           style="fill:#4bc9eb;fill-opacity:1;stroke-width:1.00023;stroke-dasharray:none"
            id="rect419-3"
            width="8.9991283"
            height="6.4966245"
@@ -107,7 +107,7 @@
            transform="matrix(-0.99999993,-3.7514119e-4,1.3424182e-4,-0.99999999,0,0)"
            inkscape:label="blue rectangle" />
         <circle
-           style="fill:#4bc9eb;fill-opacity:1;stroke-width:1.00023363;stroke-dasharray:none"
+           style="fill:#4bc9eb;fill-opacity:1;stroke-width:1.00023;stroke-dasharray:none"
            id="path3151-7"
            cx="-15.42121"
            cy="-9.7956457"
@@ -119,40 +119,40 @@
          id="g24079"
          inkscape:label="circle blue red"
          transform="matrix(0.7066993,0.70717477,-0.70647984,0.70700152,19.587289,-2.8541355)"
-         style="stroke-width:1.00061283;stroke-dasharray:none">
+         style="stroke-width:1.00061;stroke-dasharray:none">
         <path
            id="path205-8"
-           style="fill:#f53a5a;fill-opacity:1;stroke-width:1.00061283;stroke-dasharray:none"
+           style="fill:#f53a5a;fill-opacity:1;stroke-width:1.00061;stroke-dasharray:none"
            d="M 14.976563,15 A 6.5,6.5 0 0 0 8.5,21.498047 a 6.5,6.5 0 0 0 6.476563,6.498046 z"
            inkscape:label="halfcircle red" />
         <path
            id="path17466"
-           style="fill:#288be9;fill-opacity:1;stroke-width:1.00061283;stroke-dasharray:none"
+           style="fill:#288be9;fill-opacity:1;stroke-width:1.00061;stroke-dasharray:none"
            d="M 15,15.001907 V 27.998 A 6.4995616,6.5 0 0 0 15.023438,28 6.4995616,6.5 0 0 0 21.523,21.5 6.4995616,6.5 0 0 0 15.023438,15 6.4995616,6.5 0 0 0 15,15.002 Z"
            inkscape:label="halfcircle blue" />
       </g>
     </g>
     <text
        xml:space="preserve"
-       style="font-size:10.3114px;fill:#f53a5a;fill-opacity:1;stroke-width:0.859286"
-       x="0.23606336"
-       y="30.651554"
+       style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:9.33333px;font-family:'Anek Latin';-inkscape-font-specification:'Anek Latin, Semi-Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#f53a5a;fill-opacity:1;stroke-width:0.859286"
+       x="1.3648672"
+       y="29.676403"
        id="text24257"
        transform="scale(0.98947662,1.0106353)"
        inkscape:label="FlySql Text"><tspan
          sodipodi:role="line"
          id="tspan24255"
-         x="0.23606336"
-         y="30.651554"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.3114px;font-family:'Anek Latin';-inkscape-font-specification:'Anek Latin, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#f53a5a;fill-opacity:1;stroke-width:0.859286">FLYSQL</tspan></text>
+         x="1.3648672"
+         y="29.676403"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:9.33333px;font-family:'Anek Latin';-inkscape-font-specification:'Anek Latin, Semi-Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#f53a5a;fill-opacity:1;stroke-width:0.859286">FLYSQL</tspan></text>
     <rect
-       style="opacity:1;fill:none;fill-opacity:1;stroke:#288be9;stroke-width:0.203927;stroke-dasharray:none;stroke-opacity:1"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#288be9;stroke-width:0.592665;stroke-dasharray:none;stroke-opacity:1"
        id="rect4743"
-       width="31.828922"
-       height="31.76322"
-       x="0.069113024"
-       y="0.1348145"
+       width="31.407335"
+       height="31.407335"
+       x="0.29633239"
+       y="0.29633239"
        inkscape:label="Icon border"
-       ry="1.8067905" />
+       ry="1.7865467" />
   </g>
 </svg>
