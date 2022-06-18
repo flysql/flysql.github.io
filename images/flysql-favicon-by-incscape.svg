@@ -24,15 +24,15 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="px"
      showgrid="true"
-     inkscape:zoom="22.656642"
-     inkscape:cx="7.3047013"
-     inkscape:cy="9.3129425"
-     inkscape:window-width="1588"
+     inkscape:zoom="20.972431"
+     inkscape:cx="20.217017"
+     inkscape:cy="18.691205"
+     inkscape:window-width="1483"
      inkscape:window-height="1330"
-     inkscape:window-x="1843"
-     inkscape:window-y="96"
+     inkscape:window-x="1793"
+     inkscape:window-y="223"
      inkscape:window-maximized="0"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="layer2"
      showguides="true"
      inkscape:lockguides="false">
     <inkscape:grid
@@ -47,7 +47,7 @@
   <defs
      id="defs124" />
   <g
-     inkscape:label="Layer 1"
+     inkscape:label="layer 1"
      inkscape:groupmode="layer"
      id="layer1">
     <circle
@@ -58,27 +58,19 @@
        r="6.5" />
     <path
        id="path205-8"
-       style="fill:#f53a5a;stroke-width:1.20233;fill-opacity:1"
-       d="m 10.028329,14.959398 a 6.5,6.5 0 0 0 -6.4765626,6.498047 6.5,6.5 0 0 0 6.4765626,6.498046 z" />
+       style="fill:#f53a5a;fill-opacity:1;stroke-width:1.20233"
+       d="M 14.976563,15 A 6.5,6.5 0 0 0 8.5,21.498047 a 6.5,6.5 0 0 0 6.476563,6.498046 z"
+       inkscape:label="halfcircle red" />
     <path
        id="path17466"
-       style="fill:#288be9;stroke-width:1.20233;fill-opacity:1"
-       d="m 14.959016,15.042969 v 12.996093 a 6.5,6.5 0 0 0 0.02344,0.002 6.5,6.5 0 0 0 6.5,-6.5 6.5,6.5 0 0 0 -6.5,-6.5 6.5,6.5 0 0 0 -0.02344,0.002 z" />
-    <rect
-       style="fill:#4bc9eb;fill-opacity:1;stroke-width:0.796625"
-       id="rect419-3"
-       width="8.9991283"
-       height="6.4966245"
-       x="-15.500873"
-       y="-12.994185"
-       transform="matrix(-0.99999993,-3.7514119e-4,1.3424182e-4,-0.99999999,0,0)" />
-    <circle
-       style="fill:#4bc9eb;fill-opacity:1;stroke-width:1.25738"
-       id="path3151-7"
-       cx="-15.42121"
-       cy="-9.7956457"
-       transform="matrix(-0.99999568,0.00293788,-0.00294581,-0.99999566,0,0)"
-       r="3.25" />
+       style="fill:#288be9;fill-opacity:1;stroke-width:1.20229"
+       d="M 15,15.001907 V 27.998 A 6.4995616,6.5 0 0 0 15.023438,28 6.4995616,6.5 0 0 0 21.523,21.5 6.4995616,6.5 0 0 0 15.023438,15 6.4995616,6.5 0 0 0 15,15.002 Z"
+       inkscape:label="halfcircle blue" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="layer 0">
     <rect
        style="fill:#fc9b17;fill-opacity:1;stroke-width:0.792397"
        id="rect419-0-0"
@@ -86,16 +78,31 @@
        height="6.4332023"
        x="6.5088735"
        y="-0.048358787"
-       transform="matrix(0.9999724,0.00742967,-0.00136163,0.99999907,0,0)" />
+       transform="matrix(0.9999724,0.00742967,-0.00136163,0.99999907,0,0)"
+       inkscape:label="orange rectangle" />
     <circle
        style="fill:#fc9b17;fill-opacity:1;stroke-width:1.25739"
        id="path3151-8-2"
        cx="15.45"
        cy="3.25"
-       r="3.25" />
-    <path
-       style="fill:#4bc9eb;fill-opacity:1"
-       d="m 6.4412026,16.959864 c 0.059094,20.50548 0,20.387292 0,20.387292"
-       id="path16734" />
+       r="3.25"
+       inkscape:label="orange circle" />
+    <rect
+       style="fill:#4bc9eb;fill-opacity:1;stroke-width:0.796625"
+       id="rect419-3"
+       width="8.9991283"
+       height="6.4966245"
+       x="-15.500873"
+       y="-12.994185"
+       transform="matrix(-0.99999993,-3.7514119e-4,1.3424182e-4,-0.99999999,0,0)"
+       inkscape:label="blue rectangle" />
+    <circle
+       style="fill:#4bc9eb;fill-opacity:1;stroke-width:1.25738"
+       id="path3151-7"
+       cx="-15.42121"
+       cy="-9.7956457"
+       transform="matrix(-0.99999568,0.00293788,-0.00294581,-0.99999566,0,0)"
+       r="3.25"
+       inkscape:label="blue circle" />
   </g>
 </svg>
