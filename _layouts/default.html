@@ -1,46 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-	<title>{{ page.title }}</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta charset="utf-8">
-	<link rel="icon" type="image/x-icon" href="/images/favicon/favicon.64x64.ico">
-	<link rel="stylesheet" type="text/css" href="/css/main.css">
+  <meta charset="utf-8">
+  <title>{% if page.title %}{{page.title}}{% else %}{{ site.title | escape }}{% endif %}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/png" href="{{ '/images/favicon-32x32.svg' | relative_url }}">
+  <!-- Google Fonts CDN -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Self host font -->
+  <!-- <link rel="preload" href="{{ '/assets/fonts/playfair-display.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin> -->
+  <link href="{{ '/assets/css/style.css' | relative_url }}" rel="stylesheet">
+  
+  {% if page.description %}<meta name="description" content="{{ page.description }}" />{% endif %}
+  {% if page.meta_title %}<meta property="og:title" content="{{ page.meta_title }}"/>{% else %}<meta property="og:title" content="{{ page.title }}"/>{% endif %}
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="{{ url }}"/>
+  {% if page.image %}<meta property="og:image" content="{{ page.image | absolute_url }}"/>{% endif %}
+  {% if page.description %}<meta property="og:description" content="{{ page.description }}"/>{% endif %}
+  <meta name="twitter:card" content="summary"/>
+  {% if site.data.seo.meta_twitter_site %}<meta name="twitter:site" content="{{ site.seo.meta_twitter_site }}"/>{% endif %}
+  {% if site.data.seo.meta_twitter_creator %}<meta name="twitter:creator" content="{{ site.seo.meta_twitter_creator }}"/>{% endif %}
+
 </head>
 
-<body>
-	<a class="title-a" href="/">FlySql - Avaloq testing made easy</a>
-	<div class="header-div">
-		<div class=" header-a" style="display: grid;">
-			<a href="/">
-				<div>
-					<img class="header-img" src="/images/favicon/favicon.64x64.ico" alt="FlySql logo" />
-				</div>
-				<div class="header-a">Vorteile</div>
-			</a>
-		</div>
-		<div class="header-a"><a href="/integration">Integration von FlySql</a></div>
-		<div class="header-a"><a href="/certified-avaloq-prof">Für Certified Avaloq Professionals</a></div>
-		<div class="header-a"><a href="/testautomation">Für Testautomatisierer</a></div>
-		<div class="header-a"><a href="/tester">Für Tester</a></div>
-		<div class="header-a"><a href="/release-manager">Für Release Manager</a></div>
-		<div class="header-a"><a href="/flysql-intern">FlySql</a></div>
-	</div>
-	<hr>
-	<div class="container">
-
-		{{ content }}
-
-	</div>
-	<footer>
-		<hr>
-		<div class="row">
-			<div class="col-1"><img class="footer-img" src="/images/favicon/favicon.64x64.ico" alt="FlySql logo" />
-			</div>
-			<div class="col-11"><span class="footer-txt">(c) by rainer glück</span></div>
-		</div>
-	</footer>
+<body class='page {{layout.bodyClass}}'>
+  {% include main-menu-mobile.html %}
+  <div id="wrapper" class="wrapper">
+    {% include header.html headerClass='header-extra' %}
+    {{content}}
+  </div>
+  {% include footer.html %}
 </body>
-
 </html>

@@ -1,0 +1,30 @@
+.intro-image-service {
+  width: 100%;
+  height: auto;
+  margin-top: 30px;
+}
+.intro-image-absolute-service {
+  max-width: 500px;
+  max-height: 350px;
+
+  padding: 0;
+  margin-bottom: 10px;
+  @include media-breakpoint-up(sm) {
+  }
+  @include media-breakpoint-up(md) {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    width: 250px;
+  }
+  @include media-breakpoint-up(lg) {
+    bottom: 10px;
+    left: 10px;
+    width: 500px;
+  }
+  @include media-breakpoint-up(xl) {
+    bottom: 10px;
+    left: 10px;
+    width: 500px;
+  }
+}
