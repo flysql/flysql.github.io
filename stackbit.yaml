@@ -9,7 +9,7 @@ dataDir: "_data"
 pagesDir: ""
 pageLayoutKey: null
 logicFields:
-  - service.weight
+  - expert.weight
   - team.weight
 models:
   config:
@@ -61,10 +61,10 @@ models:
         name: layout
         default: "home"
         hidden: true
-  services:
+  experts:
     type: page
-    label: Services
-    file: services.md
+    label: Experts
+    file: experts.md
     singleInstance: true
     fields:
       - type: string
@@ -126,10 +126,10 @@ models:
             value: page
           - label: contact
             value: contact
-  service:
+  expert:
     type: page
-    label: Service
-    folder: _services
+    label: Expert
+    folder: _sexperts
     match: "*"
     fields:
       - type: string
@@ -148,8 +148,8 @@ models:
       - type: enum
         name: layout
         options:
-          - label: service
-            value: service
+          - label: expert
+            value: expert
   team:
     type: page
     label: Team

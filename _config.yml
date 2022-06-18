@@ -21,7 +21,7 @@ defaults:
       path: ""
       type: "experts"
     values:
-      layout: "service"
+      layout: "expert"
   - scope:
       path: ""
       type: "team"
