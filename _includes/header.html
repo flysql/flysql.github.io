@@ -1,7 +1,7 @@
 <div class='header'>
   <div class="container">
     <div class="row">
-      <div class="logo">
+      <div class="logo col-2">
         <a href="{{ site.baseurl }}"><img width="{{ site.logo.desktop_width }}" height="{{ site.logo.desktop_height }}"
             alt="{{ site.title }}" src="{{ site.logo.desktop | relative_url }}" /></a>
       </div>
@@ -9,9 +9,14 @@
         <a href="{{ site.baseurl }}"><img width="{{ site.logo.mobile_width }}" height="{{ site.logo.mobile_height }}"
             alt="{{ site.title }}" src="{{ site.logo.mobile | relative_url }}" /></a>
       </div>
-      {% include main-menu.html %}
-      {% include hamburger.html %}
-      <div class="col-md-12"><h1 class="title-in-default" >Einfache Avaloq Testautomatisierung</h1></div>
+      <div class="col-1"></div>
+      <div class="col">
+        {% include main-menu.html %}
+        {% include hamburger.html %}
+      </div>
+      <div class="col-md-12">
+        <h1 class="title-in-default">Einfache Avaloq Testautomatisierung</h1>
+      </div>
     </div>
   </div>
 </div>
