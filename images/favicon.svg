@@ -8,7 +8,7 @@
    version="1.1"
    id="svg127"
    inkscape:version="1.2 (dc2aeda, 2022-05-15)"
-   sodipodi:docname="flysql-favicon-by-incscape.svg"
+   sodipodi:docname="favicon-32x32.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -25,12 +25,12 @@
      inkscape:document-units="px"
      showgrid="true"
      inkscape:zoom="30.440718"
-     inkscape:cx="14.536451"
+     inkscape:cx="11.875541"
      inkscape:cy="15.965458"
      inkscape:window-width="1660"
      inkscape:window-height="1306"
      inkscape:window-x="1793"
-     inkscape:window-y="195"
+     inkscape:window-y="167"
      inkscape:window-maximized="0"
      inkscape:current-layer="layer1"
      showguides="true"
@@ -39,7 +39,7 @@
        type="xygrid"
        id="grid3160" />
     <sodipodi:guide
-       position="14.995877,17.21869"
+       position="15.965458,33.741089"
        orientation="1,0"
        id="guide12374"
        inkscape:locked="false" />
@@ -84,13 +84,15 @@
            y="-0.048358787"
            transform="matrix(0.9999724,0.00742967,-0.00136163,0.99999907,0,0)"
            inkscape:label="orange rectangle" />
-        <circle
-           style="fill:#fc9b17;fill-opacity:1;stroke-width:1.00023;stroke-dasharray:none"
+        <ellipse
+           style="fill:#fc9b17;fill-opacity:1;stroke-width:0.989805;stroke-dasharray:none"
            id="path3151-8-2"
-           cx="15.45"
-           cy="3.25"
-           r="3.25"
-           inkscape:label="orange circle" />
+           cx="15.506135"
+           cy="3.3905783"
+           inkscape:label="orange circle"
+           rx="3.2165251"
+           ry="3.2157264"
+           transform="matrix(0.99997997,-0.00632961,-0.00633118,0.99997996,0,0)" />
       </g>
       <g
          id="g24071"
@@ -134,17 +136,17 @@
     </g>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:9.33333px;font-family:'Anek Latin';-inkscape-font-specification:'Anek Latin, Semi-Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#f53a5a;fill-opacity:1;stroke-width:0.859286"
-       x="1.3648672"
-       y="29.676403"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:8px;font-family:'Anek Latin';-inkscape-font-specification:'Anek Latin, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#f53a5a;fill-opacity:1;stroke-width:0.859286"
+       x="0.63446456"
+       y="28.831272"
        id="text24257"
        transform="scale(0.98947662,1.0106353)"
        inkscape:label="FlySql Text"><tspan
          sodipodi:role="line"
          id="tspan24255"
-         x="1.3648672"
-         y="29.676403"
-         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:9.33333px;font-family:'Anek Latin';-inkscape-font-specification:'Anek Latin, Semi-Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#f53a5a;fill-opacity:1;stroke-width:0.859286">FLYSQL</tspan></text>
+         x="0.63446456"
+         y="28.831272"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:8px;font-family:'Anek Latin';-inkscape-font-specification:'Anek Latin, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#f53a5a;fill-opacity:1;stroke-width:0.859286">FLYSQL</tspan></text>
     <rect
        style="opacity:1;fill:none;fill-opacity:1;stroke:#288be9;stroke-width:0.592665;stroke-dasharray:none;stroke-opacity:1"
        id="rect4743"

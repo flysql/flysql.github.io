@@ -25,12 +25,12 @@
      inkscape:document-units="px"
      showgrid="true"
      inkscape:zoom="30.440718"
-     inkscape:cx="11.875541"
+     inkscape:cx="15.160615"
      inkscape:cy="15.965458"
      inkscape:window-width="1660"
      inkscape:window-height="1306"
      inkscape:window-x="1793"
-     inkscape:window-y="167"
+     inkscape:window-y="139"
      inkscape:window-maximized="0"
      inkscape:current-layer="layer1"
      showguides="true"
@@ -136,25 +136,16 @@
     </g>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:8px;font-family:'Anek Latin';-inkscape-font-specification:'Anek Latin, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#f53a5a;fill-opacity:1;stroke-width:0.859286"
-       x="0.63446456"
-       y="28.831272"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:9.33333px;font-family:'Anek Latin';-inkscape-font-specification:'Anek Latin, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#f53a5a;fill-opacity:1;stroke-width:0.872977"
+       x="0.63568676"
+       y="28.730799"
        id="text24257"
-       transform="scale(0.98947662,1.0106353)"
+       transform="scale(0.98177668,1.0185616)"
        inkscape:label="FlySql Text"><tspan
          sodipodi:role="line"
          id="tspan24255"
-         x="0.63446456"
-         y="28.831272"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:8px;font-family:'Anek Latin';-inkscape-font-specification:'Anek Latin, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#f53a5a;fill-opacity:1;stroke-width:0.859286">FLYSQL</tspan></text>
-    <rect
-       style="opacity:1;fill:none;fill-opacity:1;stroke:#288be9;stroke-width:0.592665;stroke-dasharray:none;stroke-opacity:1"
-       id="rect4743"
-       width="31.407335"
-       height="31.407335"
-       x="0.29633239"
-       y="0.29633239"
-       inkscape:label="Icon border"
-       ry="1.7865467" />
+         x="0.63568676"
+         y="28.730799"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:9.33333321px;font-family:'Anek Latin';-inkscape-font-specification:'Anek Latin, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#f53a5a;fill-opacity:1;stroke-width:0.872977">FLYSQL</tspan></text>
   </g>
 </svg>
