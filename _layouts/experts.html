@@ -3,6 +3,14 @@ layout: default
 bodyClass: "page-expert"
 ---
 
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-8">
+      <h1 class="title-in-default">FlySql - Einfache Avaloq Testautomatisierung</h1>
+    </div>
+  </div>
+</div>
+
 <div class="intro">
   <div class="container">
     <div class="row justify-content-start">
@@ -11,7 +19,9 @@ bodyClass: "page-expert"
       </div>
       {% if page.intro_image %}
       <div class="col-12 col-md-5 col-lg-6 order-1 order-md-2 position-relative">
-        <img alt={{ page.title }} class="intro-image-service{% if page.intro_image_absolute-service %} intro-image-absolute-service{% endif %}{% if page.intro_image_hide_on_mobile %} intro-image-hide-mobile{% endif %}" src="{{ page.intro_image | relative_url }}" />
+        <img alt={{ page.title }}
+          class="intro-image-service{% if page.intro_image_absolute-service %} intro-image-absolute-service{% endif %}{% if page.intro_image_hide_on_mobile %} intro-image-hide-mobile{% endif %}"
+          src="{{ page.intro_image | relative_url }}" />
       </div>
       {% endif %}
     </div>

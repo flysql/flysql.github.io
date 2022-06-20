@@ -3,6 +3,14 @@ layout: default
 bodyClass: "page-home"
 ---
 
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-8">
+      <h1 class="title-in-default">FlySql - Einfache Avaloq Testautomatisierung</h1>
+    </div>
+  </div>
+</div>
+
 <div class="intro">
   <div class="container">
     <div class="row justify-content-start">
@@ -81,8 +89,7 @@ bodyClass: "page-home"
           <li>SQL Abfragen, zum Beispiel <span class="sql">select EBANKINGID from ebanking_users ...
               where LOGIN_ID = '${LOGINID_FROM_TESTCASE}'</span></li>
           <li>PL/SQL Statements</li>
-          <li>Avaloq Statements, zum Beispiel <span
-              class="sql">lookup.asset('${ISIN}').name)</span></li>
+          <li>Avaloq Statements, zum Beispiel <span class="sql">lookup.asset('${ISIN}').name)</span></li>
           <li>Avaloq Script, zum Beispiel <span class="sql">with new mem_doc_xfermon ... tdoc
               := ${AMOUNT} ... return doc.id</span></li>
         </ul>
