@@ -13,8 +13,6 @@ logo:
 collections:
   experts:
     output: true
-  team:
-    output: true
 
 defaults:
   - scope:
@@ -22,11 +20,6 @@ defaults:
       type: "experts"
     values:
       layout: "expert"
-  - scope:
-      path: ""
-      type: "team"
-    values:
-      layout: "team"
 
 sass:
   indentWidth: 4
