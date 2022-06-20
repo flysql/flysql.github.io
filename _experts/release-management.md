@@ -12,7 +12,7 @@ Avaloq Release Manager stellen für die jeweiligen Avaloq Umgebungen FlySql Serv
 - PipelineScripts: Bamboo, Jenkins
 
 ## Beispiel Konfiguration
-<textarea class="textarea-sql mb-2" rows="6" cols="50" id="post1" >
+<textarea class="textarea-code-snippet mb-2" rows="6" cols="50" id="post1" >
 avaloq:
   db:
     - sid:
