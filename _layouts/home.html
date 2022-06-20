@@ -86,11 +86,11 @@ bodyClass: "page-home"
           oder zu generieren</li>
         <li>Ausführen dieser SQL Typen in einem Testflow, alle SQL Typen parametrisierbar falls notwendig
           <ul class="li-2nd-level">
-            <li>SQL Abfragen, zum Beispiel <span class="sql">select EBANKINGID from ebanking_users ...
+            <li>SQL Abfragen, zum Beispiel <span class="code-snippet">select EBANKINGID from ebanking_users ...
                 where LOGIN_ID = '${LOGINID_FROM_TESTCASE}'</span></li>
             <li>PL/SQL Statements</li>
-            <li>Avaloq Statements, zum Beispiel <span class="sql">lookup.asset('${ISIN}').name)</span></li>
-            <li>Avaloq Script, zum Beispiel <span class="sql">with new mem_doc_xfermon ... tdoc
+            <li>Avaloq Statements, zum Beispiel <span class="code-snippet">lookup.asset('${ISIN}').name)</span></li>
+            <li>Avaloq Script, zum Beispiel <span class="code-snippet">with new mem_doc_xfermon ... tdoc
                 := ${AMOUNT} ... return doc.id</span></li>
           </ul>
         </li>

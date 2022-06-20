@@ -13,25 +13,25 @@ Testautomatisierer erstellen automatisierte Tests um Integrations- oder Regressi
 - Browser: um FlySql Resourcen anzuschauen oder AdHoc Queries auszuführen
 
 ## Beispiele
-### Druch FlySql als REST Resource verfügbare Scripte
+### Durch FlySql als REST Resource verfügbare Scripte
 Alle Resourcen werden als GET und POST Methode exponiert. 
 #### POST Query Login name by emailadress  
-<textarea class="textarea-sql mb-2" rows="2" cols="70" id="post1" >
+<textarea class="textarea-code-snippet mb-2" rows="2" cols="70" id="post1" >
 POST: `/ebanking/login-by-emailadress.sql`
 PAYLOAD: { "EMAILADRESS":"flysql@flysql.net" }
 </textarea>  
 #### GET Name for Market SIX
-<textarea class="textarea-sql mb-2" rows="1" cols="70" id="post1" >
+<textarea class="textarea-code-snippet mb-2" rows="1" cols="70" id="post1" >
 GET: `/assets/markets/marketname-by-marketkey.avq?MARKET_KEY=SIX`
 </textarea> 
 #### Geldübertrag von CHF 12'000
-<textarea class="textarea-sql mb-2" rows="2" cols="70" id="post1" >
+<textarea class="textarea-code-snippet mb-2" rows="2" cols="70" id="post1" >
 POST: `/orders/xfer/new-with-creditcontainer.avq`
 PAYLOAD: { "CREDIT_CONTAINER_MACC":"1856-0098", "AMOUNT: 12000 }
 </textarea>
 
 ### Aufruf einer FlySql Resource in Java Junit Test
-<textarea class="textarea-sql" rows="22" cols="70" >
+<textarea class="textarea-code-snippet" rows="22" cols="70" >
 package ebankingtest.bank.ch
 ...
 
