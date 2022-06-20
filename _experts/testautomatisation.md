@@ -13,7 +13,7 @@ Testautomatisierer erstellen automatisierte Tests um Integrations- oder Regressi
 - Browser: um FlySql Resourcen anzuschauen oder AdHoc Queries auszuführen
 
 ## Beispiele
-### Druch FlySql als REST Resource verfügbare Scripte
+### Durch FlySql als REST Resource verfügbare Scripte
 Alle Resourcen werden als GET und POST Methode exponiert. 
 #### POST Query Login name by emailadress  
 <textarea class="textarea-code-snippet mb-2" rows="2" cols="70" id="post1" >
