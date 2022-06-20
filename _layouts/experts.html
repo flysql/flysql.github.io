@@ -33,13 +33,11 @@ bodyClass: "page-expert"
     {% assign weighted_experts = site.experts | sort: "weight" %}
     {% for expert in weighted_experts %}
     <div class="col-12 col-md-6 mb-3">
-      <div class="service-summary">
-        <div class="service-content">
-          <h2 class="service-title">
-            <a href="{{ expert.url | relative_url }}">{{ expert.title }}</a>
-          </h2>
-          <p>{{ expert.content | markdownify | strip_html | truncate: 220 }}</p>
-        </div>
+      <div class="service-content">
+        <h2 class="service-title">
+          <a href="{{ expert.url | relative_url }}">{{ expert.title }}</a>
+        </h2>
+        <p>{{ expert.content | markdownify | strip_html | truncate: 220 }}</p>
       </div>
     </div>
     {% endfor %}
