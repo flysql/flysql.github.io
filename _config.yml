@@ -3,30 +3,23 @@ permalink: pretty
 title: 'FlySql'
 
 logo:
-  mobile: "images/logo/logo.svg"
+  mobile: "images/logo/logo-mobile.svg"
   mobile_height: "32px"
   mobile_width: "32px"
   desktop: "images/logo/logo.svg"
   desktop_height: "32px"
-  desktop_width: "120px"
+  desktop_width: "64px"
 
 collections:
-  services:
-    output: true
-  team:
+  experts:
     output: true
 
 defaults:
   - scope:
       path: ""
-      type: "services"
+      type: "experts"
     values:
-      layout: "service"
-  - scope:
-      path: ""
-      type: "team"
-    values:
-      layout: "team"
+      layout: "expert"
 
 sass:
   indentWidth: 4

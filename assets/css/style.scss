@@ -61,8 +61,7 @@ $sub-footer-text-color: $white;
 
 // Pages
 @import "pages/page-home";
-@import "pages/page-teams";
-@import "pages/page-service";
+@import "pages/page-expert";
 
 body {
   font-size: 16px;
@@ -78,6 +77,7 @@ body {
 .title-in-default {
   color: black;
   text-align: left;
+  margin-top: 10px;
 }
 
 .li-2nd-level {
