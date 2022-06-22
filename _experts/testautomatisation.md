@@ -24,10 +24,11 @@ Testautomatisierer erstellen automatisierte Tests um Integrations- oder Regressi
   <tbody>
     <tr>
       <td>execute/&lt;DB&gt;/sql</td>
-      <td><textarea class="textarea-code-snippet" rows="4" cols="28">{ "rowsize":2,
+      <td><textarea class="textarea-code-snippet" rows="5" cols="28">{ "rowsize":2,
   "columns":["col1", "col2"], 
   "rows":[["r1c1","r1c2"],
-          ["r2c1","r2c2"]] }</textarea></td>  
+          ["r2c1","r2c2"]],
+  "scalarValue":"r1c1"  }</textarea></td>  
       <td>Aufruf eines SQL Statements, das Result ist behinhaltet alle Zeilen und Spalten des Resultats</td>
     </tr>
     <tr>
@@ -105,10 +106,11 @@ PAYLOAD : { "path":"/assets/assets-by-market.sql",
     <tr>
       <td>Resultat</td>
       <td>
-        <textarea class="textarea-code-snippet mb-2" rows="3" cols="63" id="post1" >
+        <textarea class="textarea-code-snippet mb-2" rows="4" cols="63" id="post1" >
 { "rowsize":2,
   "columns":["ISIN", "NAME"], 
-  "rows":[["CH0012221716","ABB"],["CH0012032113","Roche"]] }
+  "rows":[["CH0012221716","ABB"],["CH0012032113","Roche"]],
+  "scalarValue":"CH0012221716"  }
         </textarea>
       </td>
     </tr>
