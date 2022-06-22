@@ -23,7 +23,7 @@ Testautomatisierer erstellen automatisierte Tests um Integrations- oder Regressi
   </thead>
   <tbody>
     <tr>
-      <td>execute/sql</td>
+      <td>execute/&lt;DB&gt;/sql</td>
       <td><textarea class="textarea-code-snippet" rows="4" cols="28">{ "rowsize":2,
   "columns":["col1", "col2"], 
   "rows":[["r1c1","r1c2"],
@@ -31,12 +31,12 @@ Testautomatisierer erstellen automatisierte Tests um Integrations- oder Regressi
       <td>Aufruf eines SQL Statements, das Result ist behinhaltet alle Zeilen und Spalten des Resultats</td>
     </tr>
     <tr>
-      <td>execute/sql-scalar</td>
+      <td>execute/&lt;DB&gt;/sql-scalar</td>
       <td><textarea class="textarea-code-snippet" rows="1" cols="28">"Resultat Zeile 1, Spalte 1"</textarea></td>
       <td>Aufruf eines SQL Statements, das Resultat ist ein String mit dem Wert der ersten Zeile, erste Spalte</td>
     </tr>
     <tr>
-      <td>execute/avq/</td>
+      <td>execute/&lt;DB&gt;/avq/</td>
       <td><textarea class="textarea-code-snippet" rows="2" cols="28">"Resultat Avaloq Skripts oder des return statements"</textarea></td>
       <td>Aufruf eines Avaloq Skripts, das Resultat ist der String eines Statements oder des mit 'return' angegebenen Wertes</td>
     </tr>
@@ -89,14 +89,14 @@ Beispiel Daten:  <span class="code-snippet">select ISIN, NAME from assets where 
     <tr>
       <td>GET</td>
       <td>
-        <textarea class="textarea-code-snippet mb-2" rows="1" cols="63" id="post1" >execute/sql/AVQDB-1/assets/assets-by-market.sql?EXCHANGE=SIX
+        <textarea class="textarea-code-snippet mb-2" rows="1" cols="63" id="post1" >execute/AVQDB-1/sql/assets/assets-by-market.sql?EXCHANGE=SIX
         </textarea>
       </td>
     </tr>
     <tr>
       <td>POST</td>
       <td>
-        <textarea class="textarea-code-snippet mb-2" rows="3" cols="63" id="post1" >execute/sql/AVQDB-1        
+        <textarea class="textarea-code-snippet mb-2" rows="3" cols="63" id="post1" >execute/AVQDB-1/sql        
 PAYLOAD : { "path":"/assets/assets-by-market.sql",
             "parameterValues": {"EXCHANGE":"SIX"} }
         </textarea> 
@@ -127,14 +127,14 @@ PAYLOAD : { "path":"/assets/assets-by-market.sql",
     <tr>
       <td>GET</td>
       <td>
-        <textarea class="textarea-code-snippet mb-2" rows="2" cols="63" id="post1" >execute/sql-scalar/AVQDB-1/assets/assets-by-market.sql?EXCHANGE=SIX
+        <textarea class="textarea-code-snippet mb-2" rows="2" cols="63" id="post1" >execute/AVQDB-1/sql-scalar/assets/assets-by-market.sql?EXCHANGE=SIX
         </textarea>
       </td>
     </tr>
     <tr>
       <td>POST</td>
       <td>
-        <textarea class="textarea-code-snippet mb-2" rows="3" cols="63" id="post1" >execute/sql-scalar/AVQDB-1        
+        <textarea class="textarea-code-snippet mb-2" rows="3" cols="63" id="post1" >execute/AVQDB-1/sql-scalar        
 PAYLOAD : { "path":"/assets/assets-by-market.sql",
             "parameterValues": {"EXCHANGE":"SIX"} }
         </textarea> 
@@ -164,14 +164,14 @@ Beispiel Preisabfrage:  <span class="code-snippet">lookup.obj_asset('${ISIN}').p
     <tr>
       <td>GET</td>
       <td>
-        <textarea class="textarea-code-snippet mb-2" rows="2" cols="63" id="post1" >execute/avq/AVQDB-1/FLYSQLUSER/assets/price.avq?ISIN=CH0012221716
+        <textarea class="textarea-code-snippet mb-2" rows="2" cols="63" id="post1" >execute/AVQDB-1/avq/FLYSQLUSER/assets/price.avq?ISIN=CH0012221716
         </textarea>
       </td>
     </tr>
     <tr>
       <td>POST</td>
       <td>
-        <textarea class="textarea-code-snippet mb-2" rows="4" cols="63" id="post1" >execute/avq/AVQDB-1        
+        <textarea class="textarea-code-snippet mb-2" rows="4" cols="63" id="post1" >execute/AVQDB-1/avq        
 PAYLOAD : { "path":"/assets/assets/price.avq",
             "user":"FLYSQLUSER",
             "parameterValues": {"ISIN":"CH0012221716"} }
@@ -223,14 +223,14 @@ END;
     <tr>
       <td>GET</td>
       <td>
-        <textarea class="textarea-code-snippet mb-2" rows="2" cols="63" id="post1" >execute/avq/AVQDB-1/FLYSQLUSER/orders/xfer.avq?CREDIT_MACC=12548-CHF&AMOUNT=12000
+        <textarea class="textarea-code-snippet mb-2" rows="2" cols="63" id="post1" >execute/AVQDB-1/avq/FLYSQLUSER/orders/xfer.avq?CREDIT_MACC=12548-CHF&AMOUNT=12000
         </textarea>
       </td>
     </tr>
     <tr>
       <td>POST</td>
       <td>
-        <textarea class="textarea-code-snippet mb-2" rows="5" cols="63" id="post1" >execute/avq/AVQDB-1        
+        <textarea class="textarea-code-snippet mb-2" rows="5" cols="63" id="post1" >execute/AVQDB-1/avq/        
 PAYLOAD : { "path":"/orders/xfer.avq",
             "user":"FLYSQLUSER",
             "parameterValues": 
@@ -258,7 +258,7 @@ package ebankingtest.bank.ch
 void assetPrice_byIsin() {
   RestTemplate restTemplate = new RestTemplate();
   String baseUrl = "http://flysql.uat1.bank.ch";
-  String path = "execute/sql-scalar/AVQDB-1";
+  String path = "execute/AVQDB-1/sql-scalar";
 
   URI uri = new URI(baseUrl + path);
   PostDataDto postDataDto = new PostDataDto("/assets/assets-by-market.sql", Map.of("EXCHANGE", "SIX"));
