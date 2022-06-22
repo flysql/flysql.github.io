@@ -12,41 +12,260 @@ Testautomatisierer erstellen automatisierte Tests um Integrations- oder Regressi
 - Script Tools: Tricentis Tosca, Ranorex
 - Browser: um FlySql Resourcen anzuschauen oder AdHoc Queries auszuführen
 
-## Beispiele
-### Durch FlySql als REST Resource verfügbare Scripte
-Alle Resourcen werden als GET und POST Methode exponiert. 
-#### POST Query Login name by emailadress  
-<textarea class="textarea-code-snippet mb-2" rows="2" cols="70" id="post1" >
-POST: `/ebanking/login-by-emailadress.sql`
-PAYLOAD: { "EMAILADRESS":"flysql@flysql.net" }
-</textarea>  
-#### GET Name for Market SIX
-<textarea class="textarea-code-snippet mb-2" rows="1" cols="70" id="post1" >
-GET: `/assets/markets/marketname-by-marketkey.avq?MARKET_KEY=SIX`
-</textarea> 
-#### Geldübertrag von CHF 12'000
-<textarea class="textarea-code-snippet mb-2" rows="2" cols="70" id="post1" >
-POST: `/orders/xfer/new-with-creditcontainer.avq`
-PAYLOAD: { "CREDIT_CONTAINER_MACC":"1856-0098", "AMOUNT: 12000 }
+## Verwendung der durch FlySql zur Verfügung gestellten Resourcen
+<table class="table">
+  <thead class="thead-light">
+    <tr>
+      <th>Pfad</th>
+      <th>Result Format</th>
+      <th>Beschreibung</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>execute/sql</td>
+      <td><textarea class="textarea-code-snippet" rows="4" cols="28">{ "rowsize":2,
+  "columns":["col1", "col2"], 
+  "rows":[["r1c1","r1c2"],
+          ["r2c1","r2c2"]] }</textarea></td>  
+      <td>Aufruf eines SQL Statements, das Result ist behinhaltet alle Zeilen und Spalten des Resultats</td>
+    </tr>
+    <tr>
+      <td>execute/sql-scalar</td>
+      <td><textarea class="textarea-code-snippet" rows="1" cols="28">"Resultat Zeile 1, Spalte 1"</textarea></td>
+      <td>Aufruf eines SQL Statements, das Resultat ist ein String mit dem Wert der ersten Zeile, erste Spalte</td>
+    </tr>
+    <tr>
+      <td>execute/avq/</td>
+      <td><textarea class="textarea-code-snippet" rows="2" cols="28">"Resultat Avaloq Skripts oder des return statements"</textarea></td>
+      <td>Aufruf eines Avaloq Skripts, das Resultat ist der String eines Statements oder des mit 'return' angegebenen Wertes</td>
+    </tr>
+  </tbody>
+</table>
+
+
+## Beispiel - SQL Resourcen
+Beispiel Daten:  <span class="code-snippet">select ISIN, NAME from assets where EXCHANGE='${EXCHANGE}'</span>
+<table class="table">
+  <thead class="thead-light">
+    <tr>
+      <th>Isin</th>
+      <th>Name</th>
+      <th>Exchange</th>
+      <th>Handelswährung</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CH0012221716</td>
+      <td>ABB</td>
+      <td>SWX</td>
+      <td>CHF</td>
+    </tr>
+    <tr>
+      <td>CH0012032113</td>
+      <td>Roche</td>
+      <td>SWX</td>
+      <td>CHF</td>
+    </tr>
+    <tr>
+      <td>US4592001014</td>
+      <td>IBM</td>
+      <td>NYSE</td>
+      <td>USD</td>
+    </tr>
+  </tbody>
+</table>  
+
+### Finde alle Aktie an der SWX
+<table class="table">
+  <thead class="thead-light">
+    <tr>
+      <th>Method</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>GET</td>
+      <td>
+        <textarea class="textarea-code-snippet mb-2" rows="1" cols="63" id="post1" >execute/sql/AVQDB-1/assets/assets-by-market.sql?EXCHANGE=SIX
+        </textarea>
+      </td>
+    </tr>
+    <tr>
+      <td>POST</td>
+      <td>
+        <textarea class="textarea-code-snippet mb-2" rows="3" cols="63" id="post1" >execute/sql/AVQDB-1        
+PAYLOAD : { "path":"/assets/assets-by-market.sql",
+            "parameterValues": {"EXCHANGE":"SIX"} }
+        </textarea> 
+      </td>
+    </tr>
+    <tr>
+      <td>Resultat</td>
+      <td>
+        <textarea class="textarea-code-snippet mb-2" rows="3" cols="63" id="post1" >
+{ "rowsize":2,
+  "columns":["ISIN", "NAME"], 
+  "rows":[["CH0012221716","ABB"],["CH0012032113","Roche"]] }
+        </textarea>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+### Finde irgendeine ISIN einer Aktie an der SWX
+<table class="table">
+  <thead class="thead-light">
+    <tr>
+      <th>Method</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>GET</td>
+      <td>
+        <textarea class="textarea-code-snippet mb-2" rows="2" cols="63" id="post1" >execute/sql-scalar/AVQDB-1/assets/assets-by-market.sql?EXCHANGE=SIX
+        </textarea>
+      </td>
+    </tr>
+    <tr>
+      <td>POST</td>
+      <td>
+        <textarea class="textarea-code-snippet mb-2" rows="3" cols="63" id="post1" >execute/sql-scalar/AVQDB-1        
+PAYLOAD : { "path":"/assets/assets-by-market.sql",
+            "parameterValues": {"EXCHANGE":"SIX"} }
+        </textarea> 
+      </td>
+    </tr>
+    <tr>
+      <td>Resultat</td>
+      <td>
+        <textarea class="textarea-code-snippet mb-2" rows="1" cols="63" id="post1" >
+CH0012221716
+        </textarea>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+## Beispiel - Avaloq Script Resource
+Beispiel Preisabfrage:  <span class="code-snippet">lookup.obj_asset('${ISIN}').price</span>
+<table class="table">
+  <thead class="thead-light">
+    <tr>
+      <th>Method</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>GET</td>
+      <td>
+        <textarea class="textarea-code-snippet mb-2" rows="1" cols="63" id="post1" >execute/avq/AVQDB-1/FLYSQLUSER/assets/price.avq?ISIN=CH0012221716
+        </textarea>
+      </td>
+    </tr>
+    <tr>
+      <td>POST</td>
+      <td>
+        <textarea class="textarea-code-snippet mb-2" rows="4" cols="63" id="post1" >execute/avq/AVQDB-1        
+PAYLOAD : { "path":"/assets/assets/price.avq",
+            "user":"FLYSQLUSER",
+            "parameterValues": {"ISIN":"CH0012221716"} }
+        </textarea> 
+      </td>
+    </tr>
+    <tr>
+      <td>Resultat</td>
+      <td>
+        <textarea class="textarea-code-snippet mb-2" rows="1" cols="63" id="post1" >
+15.65
+        </textarea>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+Beispiel Zahlungsorder:
+<textarea class="textarea-code-snippet" rows="19" cols="70" >
+DECLARE
+  ...
+BEGIN
+  l_cred_macc_id := lookup.macc_id('${CREDIT_MACC}');
+  l_amount := ${AMOUNT};
+  /* more statements here */
+  
+  with new mem_doc_xfermon(1) as tdoc do
+    ....
+  end with;
+  
+  with mem_doc_xfermon(session.doc_mgr.load_doc(l_doc_id)) as tdoc do
+    ...
+  end with;
+
+  return l_doc_id;
+EXCEPTION
+  /* error handling here */
+END;
 </textarea>
 
-### Aufruf einer FlySql Resource in Java Junit Test
+<table class="table">
+  <thead class="thead-light">
+    <tr>
+      <th>Method</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>GET</td>
+      <td>
+        <textarea class="textarea-code-snippet mb-2" rows="2" cols="63" id="post1" >execute/avq/AVQDB-1/FLYSQLUSER/orders/xfer.avq?CREDIT_MACC=12548-CHF&AMOUNT=12000
+        </textarea>
+      </td>
+    </tr>
+    <tr>
+      <td>POST</td>
+      <td>
+        <textarea class="textarea-code-snippet mb-2" rows="5" cols="63" id="post1" >execute/avq/AVQDB-1        
+PAYLOAD : { "path":"/orders/xfer.avq",
+            "user":"FLYSQLUSER",
+            "parameterValues": 
+                {"CREDIT_MACC":"12548-CHF", "AMOUNT":"12000"} }
+        </textarea> 
+      </td>
+    </tr>
+    <tr>
+      <td>Resultat</td>
+      <td>
+        <textarea class="textarea-code-snippet mb-2" rows="1" cols="63" id="post1" >
+705698012
+        </textarea>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+## Aufruf einer FlySql Resource in Java Junit Test
 <textarea class="textarea-code-snippet" rows="22" cols="70" >
 package ebankingtest.bank.ch
 ...
 
 @Test
-void marketSix_returnsId185() {
+void assetPrice_byIsin() {
   RestTemplate restTemplate = new RestTemplate();
   String baseUrl = "http://flysql.uat1.bank.ch";
-  String path = "/ebanking/login-by-emailadress.sql";
+  String path = "execute/sql-scalar/AVQDB-1";
 
   URI uri = new URI(baseUrl + path);
-  MarketDto market = new Market("SIX");
+  PostDataDto postDataDto = new PostDataDto("/assets/assets-by-market.sql", Map.of("EXCHANGE", "SIX"));
 
   HttpHeaders headers = new HttpHeaders();
   ...
-  HttpEntity<Employee> request = new HttpEntity<>(market, headers);
+  HttpEntity<Employee> request = new HttpEntity<>(postDataDto, headers);
   ResponseEntity<String> result = restTemplate.postForEntity(uri, request, String.class);
   ...
   Assert.assertEquals(201, result.getStatusCodeValue());
