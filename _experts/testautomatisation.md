@@ -164,7 +164,7 @@ Beispiel Preisabfrage:  <span class="code-snippet">lookup.obj_asset('${ISIN}').p
     <tr>
       <td>GET</td>
       <td>
-        <textarea class="textarea-code-snippet mb-2" rows="1" cols="63" id="post1" >execute/avq/AVQDB-1/FLYSQLUSER/assets/price.avq?ISIN=CH0012221716
+        <textarea class="textarea-code-snippet mb-2" rows="2" cols="63" id="post1" >execute/avq/AVQDB-1/FLYSQLUSER/assets/price.avq?ISIN=CH0012221716
         </textarea>
       </td>
     </tr>
